@@ -1,0 +1,10 @@
+openapi: 3.0.0
+info:
+  title: TRX BDV DEFINITIVOS
+  contact: {}
+  version: '1.0'
+servers:
+- url: https://3.139.85.31:8000
+  variables: {}
+imports:
+    - { resource: "prueba.yaml" }

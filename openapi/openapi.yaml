@@ -9,17 +9,11 @@ info:
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
-  x-logo:
-    url: 'https://redocly.github.io/openapi-template/logo.png'
+  #x-logo:
+  #  url: 'https://redocly.github.io/openapi-template/logo.png'
   description:
     $ref: ./info-description.md
 tags:
-  - name: Echo
-    description: Example echo operations.
-  - name: User
-    description: Operations about users.
-  - name: Tag
-    description: This is a tag description.
 servers:
   - url: 'https://{tenant}/api/v1'
     variables:
@@ -28,14 +22,260 @@ servers:
         description: Your tenant id
   - url: 'https://example.com/api/v1'
 paths:
-  '/users/{username}':
-    $ref: 'paths/users_{username}.yaml'
-  /echo:
-    $ref: paths/echo.yaml
-  /pathItem:
-    $ref: paths/path-item.yaml
-  /pathItemWithExamples:
-    $ref: paths/path-item-with-examples.yaml
+  /HABA:
+    $ref: paths/HABA.yaml
+  /HABB:
+    $ref: paths/HABB.yaml
+  /B41A:
+    $ref: paths/B41A.yaml
+  /B480:
+    $ref: paths/B480.yaml
+  /BKXB:
+    $ref: paths/BKXB.yaml
+  /WP46:
+    $ref: paths/WP46.yaml
+  /WP48:
+    $ref: paths/WP48.yaml
+  /B402:
+    $ref: paths/B402.yaml
+  /B401:
+    $ref: paths/B401.yaml
+  /BG61 DEPOSITO EFECTIVO CTE - AHORRO:
+    $ref: paths/BG61 DEPOSITO EFECTIVO CTE - AHORRO.yaml
+  /BQ10:
+    $ref: paths/BQ10.yaml
+  /B533:
+    $ref: paths/B533.yaml
+  /BGV3:
+    $ref: paths/BGV3.yaml
+  /B581:
+    $ref: paths/B581.yaml
+  /BKV4:
+    $ref: paths/BKV4.yaml
+  /BQ05:
+    $ref: paths/BQ05.yaml
+  /BKV1:
+    $ref: paths/BKV1.yaml
+  /BKXA:
+    $ref: paths/BKXA.yaml
+  /EXRG:
+    $ref: paths/EXRG.yaml
+  /EXIC - menudeo:
+    $ref: paths/EXIC - menudeo.yaml
+  /EXRI:
+    $ref: paths/EXRI.yaml
+  /EXCV:
+    $ref: paths/EXCV.yaml
+  /EXID:
+    $ref: paths/EXID.yaml
+  /B030:
+    $ref: paths/B030.yaml
+  /B032:
+    $ref: paths/B032.yaml
+  /WP62:
+    $ref: paths/WP62.yaml
+  /PE98:
+    $ref: paths/PE98.yaml
+  /PE81:
+    $ref: paths/PE81.yaml
+  /PE94:
+    $ref: paths/PE94.yaml
+  /PEA1:
+    $ref: paths/PEA1.yaml
+  /PEA7:
+    $ref: paths/PEA7.yaml
+  /PEA8:
+    $ref: paths/PEA8.yaml
+  /PE53:
+    $ref: paths/PE53.yaml
+  /PE54:
+    $ref: paths/PE54.yaml
+  /PE55:
+    $ref: paths/PE55.yaml
+  /PE58:
+    $ref: paths/PE58.yaml
+  /PE61:
+    $ref: paths/PE61.yaml
+  /PE67:
+    $ref: paths/PE67.yaml
+  /PE60:
+    $ref: paths/PE60.yaml
+  /PE62:
+    $ref: paths/PE62.yaml
+  /PE63 NATURAL:
+    $ref: paths/PE63 NATURAL.yaml
+  /PE68:
+    $ref: paths/PE68.yaml
+  /PE72 NATURAL:
+    $ref: paths/PE72 NATURAL.yaml
+  /MP4Z:
+    $ref: paths/MP4Z.yaml
+  /MPK3:
+    $ref: paths/MPK3.yaml
+  /MP8X:
+    $ref: paths/MP8X.yaml
+  /MPCD:
+    $ref: paths/MPCD.yaml
+  /MP5C:
+    $ref: paths/MP5C.yaml
+  /MPK2:
+    $ref: paths/MPK2.yaml
+  /MPV0:
+    $ref: paths/MPV0.yaml
+  /VXP2 CONSULTA:
+    $ref: paths/VXP2 CONSULTA.yaml
+  /VXAF CONSULTA:
+    $ref: paths/VXAF CONSULTA.yaml
+  /PE52:
+    $ref: paths/PE52.yaml
+  /PE80:
+    $ref: paths/PE80.yaml
+  /PE88:
+    $ref: paths/PE88.yaml
+  /PE97:
+    $ref: paths/PE97.yaml
+  /PE90:
+    $ref: paths/PE90.yaml
+  /PEV3:
+    $ref: paths/PEV3.yaml
+  /B036:
+    $ref: paths/B036.yaml
+  /PE84:
+    $ref: paths/PE84.yaml
+  /VPTF:
+    $ref: paths/VPTF.yaml
+  /SRPI:
+    $ref: paths/SRPI.yaml
+  /B731:
+    $ref: paths/B731.yaml
+  /B532:
+    $ref: paths/B532.yaml
+  /B793:
+    $ref: paths/B793.yaml
+  /QGBF:
+    $ref: paths/QGBF.yaml
+  /QG81:
+    $ref: paths/QG81.yaml
+  /QG83:
+    $ref: paths/QG83.yaml
+  /QG00:
+    $ref: paths/QG00.yaml
+  /QG01:
+    $ref: paths/QG01.yaml
+  /MPK7:
+    $ref: paths/MPK7.yaml
+  /MP5D:
+    $ref: paths/MP5D.yaml
+  /MPL1:
+    $ref: paths/MPL1.yaml
+  /MP5A:
+    $ref: paths/MP5A.yaml
+  /MPB8:
+    $ref: paths/MPB8.yaml
+  /MPAN:
+    $ref: paths/MPAN.yaml
+  /MPAL:
+    $ref: paths/MPAL.yaml
+  /MPV8:
+    $ref: paths/MPV8.yaml
+  /B421:
+    $ref: paths/B421.yaml
+  /PF58:
+    $ref: paths/PF58.yaml
+  /PF57:
+    $ref: paths/PF57.yaml
+  /PEF2:
+    $ref: paths/PEF2.yaml
+  /PE65:
+    $ref: paths/PE65.yaml
+  /PE48:
+    $ref: paths/PE48.yaml
+  /PE59:
+    $ref: paths/PE59.yaml
+  /PE50:
+    $ref: paths/PE50.yaml
+  /PE51:
+    $ref: paths/PE51.yaml
+  /PE85:
+    $ref: paths/PE85.yaml
+  /PEM2:
+    $ref: paths/PEM2.yaml
+  /PEM1:
+    $ref: paths/PEM1.yaml
+  /PE75:
+    $ref: paths/PE75.yaml
+  /PE83:
+    $ref: paths/PE83.yaml
+  /PE74:
+    $ref: paths/PE74.yaml
+  /PE46:
+    $ref: paths/PE46.yaml
+  /WP65:
+    $ref: paths/WP65.yaml
+  /WP43:
+    $ref: paths/WP43.yaml
+  /WP50:
+    $ref: paths/WP50.yaml
+  /WP64:
+    $ref: paths/WP64.yaml
+  /WP42:
+    $ref: paths/WP42.yaml
+  /WP49:
+    $ref: paths/WP49.yaml
+  /WP52:
+    $ref: paths/WP52.yaml
+  /VXPC CONSULTA:
+    $ref: paths/VXPC CONSULTA.yaml
+  /WP51:
+    $ref: paths/WP51.yaml
+  /WF71:
+    $ref: paths/WF71.yaml
+  /PE64:
+    $ref: paths/PE64.yaml
+  /PEAC:
+    $ref: paths/PEAC.yaml
+  /PEAM:
+    $ref: paths/PEAM.yaml
+  /PE56:
+    $ref: paths/PE56.yaml
+  /PEV2:
+    $ref: paths/PEV2.yaml
+  /WP55:
+    $ref: paths/WP55.yaml
+  /WP56:
+    $ref: paths/WP56.yaml
+  /WP59:
+    $ref: paths/WP59.yaml
+  /WP60:
+    $ref: paths/WP60.yaml
+  /WP61:
+    $ref: paths/WP61.yaml
+  /WP53:
+    $ref: paths/WP53.yaml
+  /WP54:
+    $ref: paths/WP54.yaml
+  /B521:
+    $ref: paths/B521.yaml
+  /EX11:
+    $ref: paths/EX11.yaml
+  /EX12:
+    $ref: paths/EX12.yaml
+  /Crear usuario master:
+    $ref: paths/Crear usuario master.yaml
+  /Autorizar usuario master:
+    $ref: paths/Autorizar usuario master.yaml
+  /Eliminar usuario master:
+    $ref: paths/Eliminar usuario master.yaml
+  /Activar usuario master:
+    $ref: paths/Activar usuario master.yaml
+  /Consulta usuario master:
+    $ref: paths/Consulta usuario master.yaml
+  /Crear empresas:
+    $ref: paths/Crear empresas.yaml
+  /Modificar empresas:
+    $ref: paths/Modificar empresas.yaml
+  /Consulta empresas:
+    $ref: paths/Consulta empresas.yaml
 components:
   securitySchemes:
     main_auth:
