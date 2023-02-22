@@ -41,11 +41,12 @@ fs.readFile('elyaml.json', 'utf-8', (err, data) => {
             const ContenidoComponentYaml = ComponentYaml.toString();
             //console.log(accso[126]);
             const nombreNuevo = accso[i].post.summary;
+            const nombreCarpeta = accso[i].post.tags[0];
 
             const reInterno = definitivoComponent.components;
             const nombre = reInterno.schemas;
             const nueva = Object.keys(nombre);
-            const extension = {$ref: nombreNuevo+'.yaml'};
+            const extension = {$ref: nombreCarpeta+'/'+nombreNuevo+'.yaml'};
             const extYaml = new YAML.Document();
             extYaml.contents = extension;
             const yaa = extYaml.toString();
@@ -57,27 +58,22 @@ fs.readFile('elyaml.json', 'utf-8', (err, data) => {
 
            const rutaDefinitiva = JSON.stringify(rutaArchivo +yaa); 
    
-            console.log(rutaDefinitiva);
+            //console.log(rutaDefinitiva);
             //rutaArchivo.push('/'+nombreNuevo);
             
 
-            /*fs.appendFile('../openapi/paths/pruebaArchivo.yaml', rutaDefinitiva  , (err) => {
-                if (err) throw err;
-                console.log('Archivo'+nombreNuevo+'Creado Satisfactoriamente, numero:'+i);
-            });*/
-
-            fs.appendFile('../openapi/paths/'+nombreNuevo+'.yaml', ContenidoYaml + ContenidoComponentYaml, (err) => {
+            fs.appendFile('../openapi/paths/pruebaArchivo2.yaml', rutaDefinitiva  , (err) => {
                 if (err) throw err;
                 console.log('Archivo'+nombreNuevo+'Creado Satisfactoriamente, numero:'+i);
             });
 
+            /*fs.mkdirSync('../openapi/paths/'+nombreCarpeta,{recursive:true});*/
+
+            /*fs.appendFile('../openapi/paths/'+nombreCarpeta+'/'+nombreNuevo+'.yaml', ContenidoYaml + ContenidoComponentYaml, (err) => {
+                if (err) throw err;
+                console.log('Archivo'+nombreNuevo+'Creado Satisfactoriamente, numero:'+i);
+            });*/
+
         }
-
-
-
-        /*  fs.writeFile('../openapi/paths/openapi.yaml', 'Stock: Agotado', (err) => {
-              if (err) throw err;
-              console.log('Archivo actualizado Satisfactoriamente');
-          });*/
     }
 });
