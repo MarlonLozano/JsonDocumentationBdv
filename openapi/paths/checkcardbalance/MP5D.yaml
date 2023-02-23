@@ -51,9 +51,48 @@ post:
           terminal: "0190"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: MPE9999 EXISTEN ERRORES DE VALIDACION.
+            data:
+              MPM0466: []
+              NOTICES:
+              - aviso: "03 CUENTA DE TARJETA INEXISTENTEÓ\x9F"
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              MPM0466:
+              - user:
+                terminal:
+                codigoDeEntidad: '0102'
+                centroDeAltaCuent: '0121'
+                cuentaDeLaTarjeta: '440000183233'
+                codmarcaTarjeta: 4
+                descrdeLaMarca: 'MAESTRO   '
+                indTipoTarjeta: 10
+                descrtipoTjtReduc: 'MCLASICA  '
+                numeroDeTarjeta: '5899415611546865      '
+                fechaDeAlta: '2016-02-24'
+                indsituacionTjt: 5
+                dessituacionTjt: 'ACTIVA                        '
+                nombreEstampacion: 'ABELARDO A PEREZ          '
+                codigoDeBloqueo: 0
+                fechaDeBaja: '0001-01-01'
+                descripcionBloqueo: 'NORMAL    '
+                indUltimaTarjeta: 'S '
+              NOTICES:
+              - aviso: 66 OK. OPERACION EFECTUADAÓ
+            status: 200
   deprecated: false
 components:
   schemas:

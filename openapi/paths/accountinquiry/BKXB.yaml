@@ -5,9 +5,11 @@ post:
   operationId: BKXB
   parameters: []
   responses:
-    "200":
-      description: ""
-      headers: {}
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
   deprecated: false
 components:
   schemas:

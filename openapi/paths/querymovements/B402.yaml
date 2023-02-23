@@ -21,9 +21,99 @@ post:
           cobrocomision: S
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "QCE0040 EL CAMPO CODIGO CTA-CLIENTE ES OBLIGATORIOÓ\x9F"
+            data:
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+          - code:
+            description:
+            cuenta: '01020359710000021089'
+            cupoCanje: 0
+            cupoRemesas: 0
+            disponibleConjunto: 1120.07
+            disponibleRetenido: 0
+            disponibleTotal: 0
+            divisa: VES
+            excedido: 0
+            limite: 0
+            saldoCanje: 0
+            saldoDisponible: 1120.07
+            saldoDispuesto: 1120.07
+            saldoRemesas: 0
+            saldoRetenido: 0
+            saldoRetenidoHoy: 0
+            saldoRetenidoLiq: 0
+            saldoRetenidoPrec: 0
+            cuentaPpal:
+            divisaPpal:
+            cuentaAsoBim: "                    "
+            divisaAsoBim: "   "
+            ppalDisponible:
+            ppalContable: 1120.07
+            ppalContFecValor: 0
+            ppalSaldoCaja: 0
+            ppalOperativo: 0
+            ppalTotdispAcum:
+            ppalSdoRetenc: 0
+            ppalSdoRetPrec:
+            ppalSdoRetHoy:
+            ppalSdoRetTot: 0
+            ppalSdoRetLiq:
+            ppalSdoRetenido:
+            ppalExcedido:
+            ppalExceVentan: 0
+            ppalExceCajero: 0
+            ppalExceCompra: 0
+            ppalCupoCanje:
+            ppalCupoRemesas: 0
+            ppalSdoCanje:
+            ppalSdoRemesas:
+            ppalContConDep: 0
+            ppalLimite:
+            ppalSdoTrasCanje: 0
+            ppalDiasSobregD: "   "
+            ppalDiasSobregD1: "   "
+            sdoRetDiaSig: 0
+            dispoConjun:
+            nroGirosAnuales: "     "
+            maxGirosPermit: "     "
+            fechaProxLiq: '2023-02-28'
+            saldoFinanciero: 0
+            abimDisponible: 0
+            abimContable: 0
+            abimContFecValor: 0
+            abimSaldoCaja: 0
+            abimOperativo: 0
+            abimTotdispAcu: 0
+            abimSdoRetenc: 0
+            abimSdoRetPrec: 0
+            abimSdoRetHoyc: 0
+            abimSdoRetTotal: 0
+            abimSdoRetLiq: 0
+            abimSdoRetenido: 0
+            abimExcedido: 0
+            abimExceVentan: 0
+            abimExceCajero: 0
+            abimExceCompra: 0
+            abimCupoCanje: 0
+            abimSdoCanje: 0
+            abimCupoRemesas:
+            abimSdoRemesas: 0
+            abimContConDep: 0
+            abimLimite: 0
+            abimSdoTrasCanje: 0
+            abimDiasSobregD: "   "
+            abimDiasSobregD1: "   "
   deprecated: false
 components:
   schemas:

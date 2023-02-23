@@ -29,9 +29,324 @@ post:
           Terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              HAMBBB1:
+              - codServicio: 166
+                descripcion: PAGO DE FALT CAJA EN EFEC BS S
+              - codServicio: 167
+                descripcion: 'CRUC FALTANTE CARGO CTA       '
+              - codServicio: 164
+                descripcion: 'FALTANTE DE REMESAS OFIC BS S '
+              - codServicio: 165
+                descripcion: REINT SOBRANT REMESA EFEC BS S
+              - codServicio: 162
+                descripcion: REM EFECTIVO ENV OT CTROS BS S
+              - codServicio: 163
+                descripcion: 'REMESA EFECTIVO RECIBIDA BS S '
+              - codServicio: 82
+                descripcion: 'REINTEGRO COMISION ABONO CTA. '
+              - codServicio: 83
+                descripcion: 'REINTEGRO INT CREDITO VIGENTE '
+              - codServicio: 75
+                descripcion: 'DEUDORES SERVICIOS BANCARIOS  '
+              - codServicio: 76
+                descripcion: 'AGUA AGENCIAS EFECTIVO BS S   '
+              - codServicio: 80
+                descripcion: 'GASTOS MISC ABONO CTA         '
+              - codServicio: 81
+                descripcion: 'PAGO CTA COB CLTE F/L BS S    '
+              - codServicio: 85
+                descripcion: 'AVALUOS LPH                   '
+              - codServicio: 87
+                descripcion: 'DIF SOBRANTE CAJERO ATM BS S  '
+              - codServicio: 88
+                descripcion: 'CRUCE SOB.CAJ ATM EFECT BS S  '
+              - codServicio: 89
+                descripcion: 'AVALUOS CAJA DE AHORRO        '
+              - codServicio: 84
+                descripcion: 'REINTEGRO INT CREDITO VENCIDO '
+              - codServicio: 151
+                descripcion: 'COMIS MENUDEO MANUAL          '
+              - codServicio: 161
+                descripcion: 'SOBRANTE EN REMESAS OFIC BS S '
+              - codServicio: 133
+                descripcion: 'REMESA ENVIADA USD            '
+              - codServicio: 149
+                descripcion: 'ESTAFAS OFIC EFECTIVO BS F    '
+              - codServicio: 132
+                descripcion: 'ESTACIONES DE SERV BS USD     '
+              - codServicio: 127
+                descripcion: 'ADMON GASTOS BS S             '
+              - codServicio: 131
+                descripcion: 'COMPRA ESTACION DE SERV USD   '
+              - codServicio: 121
+                descripcion: 'IGTF POR MAS DE UN ENDOSO     '
+              - codServicio: 126
+                descripcion: 'COMIS NOMINA MANUAL           '
+              - codServicio: 119
+                descripcion: 'CRUCE REMESAS ENVIADA BCV     '
+              - codServicio: 120
+                descripcion: 'CRUCE REMESA RECIBIDA BCV     '
+              - codServicio: 94
+                descripcion: 'AJUSTE CHEQ BDV               '
+              - codServicio: 90
+                descripcion: PAGO FALT CAJ ATM EN EFEC BS S
+              - codServicio: 91
+                descripcion: 'PAGO FALT CAJ ATM CARGO CTA   '
+              - codServicio: 92
+                descripcion: 'CHEQ GERENC CRED COMERCIALES  '
+              - codServicio: 93
+                descripcion: 'REMESA EFECTIVO RECIBIDA BS S '
+              - codServicio: 98
+                descripcion: 'AJUST OPERAC VARIAS BS S      '
+              - codServicio: 99
+                descripcion: 'CRUCE OPERAC CARGO INDEBIDO   '
+              - codServicio: 100
+                descripcion: 'RECUP CRED EN EFECTIVO BS S   '
+              - codServicio: 101
+                descripcion: 'CUOTAS DE AFILIACION          '
+              - codServicio: 95
+                descripcion: 'DIFERENCIA FALTANTE ATM BS S  '
+              - codServicio: 96
+                descripcion: DIFERENCIA DEUDORA OFIC AB CTA
+              - codServicio: 117
+                descripcion: 'COMIS AVALUO CRED AGROP       '
+              - codServicio: 118
+                descripcion: 'INGRESOS POR ALQUILERES BS S  '
+              - codServicio: 116
+                descripcion: 'CUENTA POR COBRAR EMPLEADOS   '
+              - codServicio: 3
+                descripcion: 'PAGO FALT RM CARGO CTA        '
+              - codServicio: 114
+                descripcion: 'PAGO CAJA CHICA PDVSA BS S    '
+              - codServicio: 2
+                descripcion: 'CRUC DEUD AB INDEB CARGO CTA  '
+              - codServicio: 115
+                descripcion: 'CTAS PEND REINTEGRO           '
+              - codServicio: 1
+                descripcion: 'DEUDOR ABONOS INDEB EFECTBS S '
+              - codServicio: 112
+                descripcion: 'COMISION EXTRAVIO CARNET BS S '
+              - codServicio: 113
+                descripcion: 'ND CAJA CHICA PDVSA           '
+              - codServicio: 17
+                descripcion: 'CHEQ GER CRED FAOV            '
+              - codServicio: 110
+                descripcion: REINTEG VIATICO PDVSA EFEC BSS
+              - codServicio: 18
+                descripcion: 'TRASLADO DE DOCUMENTOS        '
+              - codServicio: 111
+                descripcion: PAGO FALTANTE RMESAS EFEC BS S
+              - codServicio: 19
+                descripcion: 'TELEFONO                      '
+              - codServicio: 108
+                descripcion: 'PAGO VIATICOS PDVSA EFEC BS S '
+              - codServicio: 20
+                descripcion: 'GASTOS LEGALES BS S           '
+              - codServicio: 109
+                descripcion: 'NC VIATICOS PDVSA             '
+              - codServicio: 13
+                descripcion: 'APORTE LABORAL PARO FORZOSO   '
+              - codServicio: 14
+                descripcion: REINTEGRO DE SOB EN EFECT BS S
+              - codServicio: 15
+                descripcion: 'OPERAC  CREDIAUTO             '
+              - codServicio: 16
+                descripcion: 'VEHICULOS Y ACESORIOS         '
+              - codServicio: 102
+                descripcion: DEP RECB EN GRTIA GOB NAC BS S
+              - codServicio: 103
+                descripcion: CRUCE DEUDOR ABONOS INDEB BS S
+              - codServicio: 11
+                descripcion: 'ESTAFAS OFICINAS EN EFEC BS S '
+              - codServicio: 104
+                descripcion: 'COMIS AGENTE TRASPASO BS S    '
+              - codServicio: 12
+                descripcion: 'INGRES EFECT CAJERO ATM BS D  '
+              - codServicio: 105
+                descripcion: 'TRASLADO EFECTIVO BS D        '
+              - codServicio: 106
+                descripcion: 'APORTE LABORAL SSSO           '
+              - codServicio: 10
+                descripcion: 'FALTANTE DE REMESAS OFIC BS S '
+              - codServicio: 107
+                descripcion: 'ND VIATICOS PDVSA             '
+              - codServicio: 9
+                descripcion: 'FONDO PEND RENDICION          '
+              - codServicio: 8
+                descripcion: REM EFECTIVO ENV OT CTROS BS S
+              - codServicio: 7
+                descripcion: 'PAPEL Y EFECTOS ESC OFICINA   '
+              - codServicio: 6
+                descripcion: REINT SOBRANT REMESA EFEC BS S
+              - codServicio: 5
+                descripcion: PAGO DE FALT CAJA EN EFEC BS S
+              - codServicio: 4
+                descripcion: 'SOBRANTE EN REMESAS OFIC BS S '
+              - codServicio: 28
+                descripcion: 'ACREED VARIOS                 '
+              - codServicio: 29
+                descripcion: 'LIQUIDACIONES DE PERSONAL     '
+              - codServicio: 30
+                descripcion: 'INDUST Y PATENTE PAG ANTICIP  '
+              - codServicio: 24
+                descripcion: 'CRUC FALTANTE CARGO CTA       '
+              - codServicio: 25
+                descripcion: 'CRUCE SOBRANTE ABONO CTA      '
+              - codServicio: 26
+                descripcion: 'CTAS X COB EMPLEDOS ABONO CTA '
+              - codServicio: 27
+                descripcion: 'CHEQ. CRED. HIPOTEC.          '
+              - codServicio: 21
+                descripcion: DEUDORES DIVERSOS ADMINISTRACI
+              - codServicio: 22
+                descripcion: 'GASTOS MISCELANEOS OTROS BS S '
+              - codServicio: 23
+                descripcion: 'SALIDA EFECT CAJ AUTOMAT BS D '
+              - codServicio: 39
+                descripcion: 'RECUPERACIONES DE CREDITOS    '
+              - codServicio: 40
+                descripcion: 'ACTIV DEP Y CULTURALES CHEQ   '
+              - codServicio: 35
+                descripcion: 'EMIS CHEQ GCIA CRED EMPLEADOS '
+              - codServicio: 36
+                descripcion: 'PAGO APORTE PARO FORZOSO      '
+              - codServicio: 37
+                descripcion: 'PAGO APORTE SEGURO SOCIAL     '
+              - codServicio: 38
+                descripcion: 'COMIS VTA EFECTIVO DIVISA     '
+              - codServicio: 31
+                descripcion: ABONO CTA. CLIENTES POR ESTAFA
+              - codServicio: 32
+                descripcion: 'PAGO MISIONES BS S            '
+              - codServicio: 33
+                descripcion: COMIS PAGO ISLR CON BONOS BS S
+              - codServicio: 34
+                descripcion: 'CRUC ACRED OPRC CARG INDB BSS '
+              - codServicio: 41
+                descripcion: 'CRUCE SOBRANTE REMESA AB CTA  '
+              - codServicio: 50
+                descripcion: TASA ADMON MUNICIPAL EFEC BS S
+              - codServicio: 46
+                descripcion: 'VIATICOS EN EL PAIS AB CTA    '
+              - codServicio: 47
+                descripcion: 'PATROCINIO DE EVENTOS         '
+              - codServicio: 48
+                descripcion: 'EMIS CHEQ CREDIAUTO USADO     '
+              - codServicio: 49
+                descripcion: 'PAGO LUZ EFECTIVO BS S        '
+              - codServicio: 42
+                descripcion: 'ESTACIONES DE SERV BS EUR     '
+              - codServicio: 43
+                descripcion: 'TASA ADMON MUNICIPAL CHEQ     '
+              - codServicio: 44
+                descripcion: 'AVALUOS CAJA DE AHORRO BS S   '
+              - codServicio: 45
+                descripcion: 'AVALUOS LPH BS S              '
+              - codServicio: 51
+                descripcion: 'EMIS. CHEQ. CRED. PERSONAL    '
+              - codServicio: 52
+                descripcion: REV CHQ GER HIPTEC SERV 27 BSS
+              - codServicio: 99999
+                descripcion: DIFERENCIA SOBRANT < 50.000,00
+              - codServicio: 99997
+                descripcion: DIFERENCIA FALTANTE< 50.000,00
+              - codServicio: 99998
+                descripcion: 'DIFEREN SOBRANTE >=50.000,00  '
+              - codServicio: 57
+                descripcion: 'BOMBEROS SANIDAD Y OTROS      '
+              - codServicio: 58
+                descripcion: 'EMIS CHEQ GCIA ARREND FINANC  '
+              - codServicio: 59
+                descripcion: 'TRANSP TERRESTRE ALQUILER VEH '
+              - codServicio: 60
+                descripcion: 'RETIRO DE EFECTIVO EXCEP USD  '
+              - codServicio: 53
+                descripcion: 'OTROS GASTOS DE PERSONAL      '
+              - codServicio: 54
+                descripcion: 'COMPRA ESTACION DE SERV EUR   '
+              - codServicio: 55
+                descripcion: REINTEG CTA JURIDICA CANCELADA
+              - codServicio: 56
+                descripcion: 'REMESA ENVIADA EUR            '
+              - codServicio: 61
+                descripcion: REV CHEQ GER FAOV SERV 17 BS S
+              - codServicio: 62
+                descripcion: 'ASEO URBANO OFICINAS          '
+              - codServicio: 63
+                descripcion: " GASTOS OPER MCBE             "
+              - codServicio: 99990
+                descripcion: DIFERENCIA FALTANTE> 50.000,00
+              - codServicio: 99996
+                descripcion: DIFERENCIA FALTANTE> 50.000,00
+              - codServicio: 99988
+                descripcion: 'DIFEREN SOBRANTE >=50.000,00  '
+              - codServicio: 99989
+                descripcion: DIFERENCIA FALTANTE< 50.000,00
+              - codServicio: 179
+                descripcion: 'SALIDA EFECTIVO DIGITAL       '
+              - codServicio: 99987
+                descripcion: DIFERENCIA SOBRANT < 50.000,00
+              - codServicio: 178
+                descripcion: 'ENTRADA EFECTIVO SOBERANO     '
+              - codServicio: 176
+                descripcion: 'SALIDA EFECT CAJ AUTOMAT BS S '
+              - codServicio: 177
+                descripcion: 'TRASLADO EFECTIVO BS S        '
+              - codServicio: 173
+                descripcion: 'CRUCE SOBRANTE ABONO CTA      '
+              - codServicio: 175
+                descripcion: 'INGRES EFECT CAJERO ATM BS S  '
+              - codServicio: 68
+                descripcion: 'AGUA AGENCIA ABONO EN CTA.    '
+              - codServicio: 69
+                descripcion: 'PAGO DE LUZ ABONO CTA         '
+              - codServicio: 70
+                descripcion: 'PROPAGANDA COMERCIAL          '
+              - codServicio: 64
+                descripcion: 'INDUSTRIA Y PATENTE           '
+              - codServicio: 65
+                descripcion: 'DERECHO DE FRENTE             '
+              - codServicio: 66
+                descripcion: 'RETIRO DE EFECTIVO EXCEP EUR  '
+              - codServicio: 67
+                descripcion: 'AGUA POTABLE BS S             '
+              - codServicio: 71
+                descripcion: 'ALQUILER DE ESTACIONAMIENTO   '
+              - codServicio: 72
+                descripcion: 'GASTOS DE REUNIONES           '
+              - codServicio: 73
+                descripcion: 'COBRAR CLTE FUERA LINEA BS S  '
+              - codServicio: 74
+                descripcion: 'GASTOS LEGALES                '
+              - codServicio: 171
+                descripcion: 'COMPRA DIVIS MENUD BS EUR     '
+              - codServicio: 172
+                descripcion: REINTEGRO DE SOB EN EFECT BS S
+              - codServicio: 169
+                descripcion: 'COMPRA DIVIS MENUDEO OFIC EUR '
+              - codServicio: 170
+                descripcion: 'COMPRA DIVIS MENUD BS USD     '
+              - codServicio: 168
+                descripcion: 'COMPRA DIVIS MENUDEO OFIC USD '
+          status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "QCE0040 EL CAMPO OFICINA ES OBLIGATORIOÓ\x9F"
+            data: {}
+            status: 200
+
   deprecated: false
 components:
   schemas:

@@ -1,8 +1,8 @@
 post:
   tags:
-    - checkcarddetails
-  summary: MPCD
-  operationId: MPCD
+    - checkcardbalance
+  summary: MP9Z
+  operationId: MP9Z
   parameters: []
   requestBody:
     description: ""
@@ -10,11 +10,19 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: "#/components/schemas/MPCDREQUEST"
+            - $ref: "#/components/schemas/MP9ZREQUEST"
             - example:
-                numeroPersona: "25646766"
+                panDeLaTarjeta: 5899415611546865
+                motivoDeBaja: 10
+                indRecogPlastico: N 
+                user: OPCE812
+                terminal: "0190"
         example:
-          numeroPersona: "25646766"
+          panDeLaTarjeta: 5899415611546865
+          motivoDeBaja: 10
+          indRecogPlastico: N 
+          user: OPCE812
+          terminal: "0190"
     required: true
   responses:
     "201":
@@ -23,8 +31,10 @@ post:
         application/json:
           example:
             code: 1001
-            message: "MPE9023 NO EXISTEN CONTRATOS PARA ESTE DOCUMENTOÓ\x9F"
-            data: {}
+            message: MPE9999 EXISTEN ERRORES DE VALIDACION.
+            data:
+              NOTICES:
+              - aviso: "73 TARJETA INEXISTENTEÓ\x9F"
             status: 200
     "200":
       description: succes
@@ -34,64 +44,9 @@ post:
             code: 1000
             message: success
             data:
-              MPMAL02:
-              - codigoEntidad: '0102'
-                centroAlta: '0330'
-                codigoCuenta: '440000806516'
-                numeroPlastico: '000000000001'
-                tipbon: "      "
-                codigoMarca: '04'
-                tipoIndicador: '10'
-                numeroTarjeta: '5899415532648717      '
-                tarjetaAnterior: "                      "
-                calpart: TI
-                fecalta: '2018-05-02'
-                feculus: '2023-02-22'
-                indicadorSituacion: '05'
-                indUltimaTarjeta: 'S '
-                descripcionSituacion: 'ACTIVA                        '
-                indnore: '0'
-                codigoBloqueo: '00'
-                fechaUltiBloqueo: '0001-01-01'
-                descriBloqueo: "                              "
-                fechaBaja: '0001-01-01'
-                motivoBaja: "  "
-                fechaCaducidaTarjeta: '202010'
-                fechaCaducidaAnterior: '000000'
-                fechaCobroCuota: '202111'
-                codigoClave: '401'
-                descripcionGrup: 'MAESTRO CLASICO                         '
-                identificacionEmpleado: "                    "
-                identificacionCambioLimi: S
-                idicadorActualLimi: S
-                idicadorResActual: N
-                idicadorResCom: N
-                idicadorLinfac: S
-                visaphone: '0000'
-                numkpin: '03'
-                nombreBeneficiario: 'ABDONA R PEREZ            '
-                indfoto: N
-                reffoto: "                              "
-                producto: '44'
-                fecenvest: '0001-01-01'
-                fecrese: '0001-01-01'
-                fecacus: '0001-01-01'
-                fecultr: '0001-01-01'
-                fecrect: '0001-01-01'
-                fcorett: '0001-01-01'
-                hcorett: 00.00.00
-                condest: '901'
-                estplas: "                                        "
-                estpla2: '25646766                                '
-                codprom: "   "
-                indexec: S
-                indapli: S
-                contcur: 2022-10-31-18.57.52.825388
-                contcup: 2018-05-02-10.22.57.951929
-                supprod: '4000'
-                indblqo: N
               NOTICES:
-              - aviso: 05 OK. OPERACION EFECTUADAÓ
+              - aviso: 93 NO HA PODIDO SER COMUNICADOÓ
+              - aviso: 66 OK. OPERACION EFECTUADAÓ
             status: 200
   deprecated: false
 components:
@@ -10179,76 +10134,24 @@ components:
         fechaDeAlta: " "
         fechaDeBaja: " "
         controlDeConcurren: 2022-10-25-18.22.25.555253
-    MP5DREQUEST:
-      title: MP5DREQUEST
+    MP9ZREQUEST:
+      title: MP9ZREQUEST
       required:
-        - codigoDeEntidad
-        - centroDeAltaCuent
-        - cuentaDeLaTarjeta
-        - codmarcaTarjeta
-        - descrdeLaMarca
-        - indTipoTarjeta
-        - descrtipoTjtReduc
-        - numeroDeTarjeta
-        - fechaDeAlta
-        - indsituacionTjt
-        - dessituacionTjt
-        - nombreEstampacion
-        - codigoDeBloqueo
-        - fechaDeBaja
-        - descripcionBloqueo
-        - indUltimaTarjeta
+        - panDeLaTarjeta
+        - motivoDeBaja
+        - indRecogPlastico
         - user
         - terminal
       type: object
       properties:
-        codigoDeEntidad:
-          description: Entidad 0102 Valor por defecto
+        panDeLaTarjeta:
+          description: Numero de la Tarjeta
           type: string
-        centroDeAltaCuent:
-          description: Oficina que da el alta a la tarjeta
+        motivoDeBaja:
+          description: List Box
           type: string
-        cuentaDeLaTarjeta:
-          description: Cuenta contrato de la tarjeta
-          type: string
-        codmarcaTarjeta:
-          description: Campo de salida
-          type: string
-        descrdeLaMarca:
-          description: Campo de salida
-          type: string
-        indTipoTarjeta:
-          description: Campo de salida
-          type: string
-        descrtipoTjtReduc:
-          description: Campo de salida
-          type: string
-        numeroDeTarjeta:
-          description: Campo de salida
-          type: string
-        fechaDeAlta:
-          description: Campo de salida
-          type: string
-        indsituacionTjt:
-          description: Campo de salida
-          type: string
-        dessituacionTjt:
-          description: Campo de salida
-          type: string
-        nombreEstampacion:
-          description: Campo de salida
-          type: string
-        codigoDeBloqueo:
-          description: Campo de salida
-          type: string
-        fechaDeBaja:
-          description: Campo de salida
-          type: string
-        descripcionBloqueo:
-          description: Campo de salida
-          type: string
-        indUltimaTarjeta:
-          description: Campo de salida
+        indRecogPlastico:
+          description: Valor Por Defecto
           type: string
         user:
           description: ""
@@ -10257,22 +10160,9 @@ components:
           description: ""
           type: string
       example:
-        codigoDeEntidad: "0102"
-        centroDeAltaCuent: "0121"
-        cuentaDeLaTarjeta: "440000183233"
-        codmarcaTarjeta: ""
-        descrdeLaMarca: ""
-        indTipoTarjeta: ""
-        descrtipoTjtReduc: ""
-        numeroDeTarjeta: ""
-        fechaDeAlta: ""
-        indsituacionTjt: ""
-        dessituacionTjt: ""
-        nombreEstampacion: ""
-        codigoDeBloqueo: ""
-        fechaDeBaja: ""
-        descripcionBloqueo: ""
-        indUltimaTarjeta: ""
+        panDeLaTarjeta: 5899415611546865
+        motivoDeBaja: 10
+        indRecogPlastico: N 
         user: OPCE812
         terminal: "0190"
     MPL1REQUEST:

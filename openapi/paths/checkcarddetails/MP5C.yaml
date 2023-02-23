@@ -153,9 +153,100 @@ post:
           oficinaGestora: ""
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: MPE9999 EXISTEN ERRORES DE VALIDACION.
+            data:
+              NOTICES:
+              - aviso: "03 CUENTA DE TARJETA INEXISTENTEÓ\x9F"
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              MPM0465:
+              - user:
+                terminal:
+                codigoDeEntidad: '0102'
+                centroAltaCtaTar: '0353'
+                cuentaTarjeta: '440000359268'
+                numeroTarjeta: "                      "
+                fechaAltaCtaTar: '2022-11-11'
+                codigoProducto: '44'
+                codigoSubproducto: '4000'
+                codigoCondicionEco: '400'
+                codigoCampania: "      "
+                codigoConvenio: "    "
+                formaPagoSoloCre: "  "
+                fechaUltimoCargo: '0001-01-01'
+                fechaBaja: '0001-01-01'
+                motivoBaja: "  "
+                formaPagoTemporal: "  "
+                fechaIniForpago: '0001-01-01'
+                fechaFinForPago: '0001-01-01'
+                indEstadoCtaTar: 0
+                fecUltiCambesta: '0001-01-01'
+                indBloqueoActivi: N
+                indBloqueoConsul: N
+                indCuentaEmpresa: 0
+                indNombreDeEmpre: 0
+                nombreEmpresa: "                              "
+                indSituaContrato: 0
+                fecResoluCuenta: '2022-11-11'
+                indCuentaTraspas: N
+                grupoLiquidacion: "  "
+                grupoProcesoCuota: 28
+                restriccionMesEmis: NNNNNNNNNNNN
+                tipoBonificacion: "      "
+                calidadDeParticipa: TI
+                codigoDePromocion: "   "
+                indPeriodifiCuota: N
+                numeroMesesDistCobcuo: "  "
+                codiRegimenFiscal: "    "
+                contadorDeFacturac: "  "
+                contConcuContra: 2023-02-02-09.35.36.302941
+                contrConcuMoneda1: "                          "
+                contrConcuMoneda2: "                          "
+                bloqueoActiviCta1: "  "
+                comentarioBloqueo1: "                              "
+                fechaUltimoBloqueo1: "          "
+                indicadorDeBloqueo1: " "
+                bloqueoActiviCta2: "  "
+                comentarioBloqueo2: "                              "
+                fechaUltimoBloqueo2: "          "
+                indicadorDeBloqueo2: " "
+                bloqueoActiviCta3: "  "
+                comentarioBloqueo3: "                              "
+                fechaUltimoBloqueo3: "          "
+                indicadorDeBloqueo3: " "
+                bloqueoActiviCta4: "  "
+                comentarioBloqueo4: "                              "
+                fechaUltimoBloqueo4: "          "
+                indicadorBloqueo4: " "
+                bloqueoActiviCta5: "  "
+                comentarioBloqueo5: "                              "
+                fechaUltimoBloqueo5: "          "
+                indicadorBloqueo5: " "
+                claveMoneda1: "   "
+                impfijPagoAplaza1: "                 "
+                impfijPagoTempo1: "                 "
+                claveMoneda2: "   "
+                impfijpagoAplaza2: "                 "
+                impfijPagoTempo2: "                 "
+                indCargoCargoCrdt: N
+                codigoFormato: "          "
+                oficinaGestora: '0353'
+              NOTICES:
+              - aviso: 66 OK. OPERACION EFECTUADAÓ
+            status: 200
   deprecated: false
 components:
   schemas:

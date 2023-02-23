@@ -21,9 +21,84 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: MPE9999 EXISTEN ERRORES DE VALIDACION.
+            data:
+              NOTICES:
+              - aviso: "73 TARJETA INEXISTENTEÓ\x9F"
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              MPM0405:
+              - user:
+                terminal:
+                codigoDeEntidad: '0102'
+                centroAltaCtaTar: '0584'
+                cuentaDeTarjeta: '440000034723'
+                numeroDePlastico: 2
+                tipoDeBonificacion: "      "
+                codigoMarcaTarjeta: 4
+                codigoTipoTarjeta: 10
+                panDeLaTarjeta: '5899415934973614      '
+                panAnteriorBenefi: '5899415379203394      '
+                calidadParticipac: TI
+                fechaDeAlta: '2017-02-15'
+                fecUltUtilTar: '2021-07-24'
+                indSituacionTarj: 5
+                indUltimaTarjeta: 'S '
+                desSituacionTarj: 'ACTIVA                        '
+                indicadorRenovacion: 0
+                bloqueoActiviCta: 0
+                fechaUltimoBloqueo: '0001-01-01'
+                comentarioBloqueo: "                              "
+                fechaDeBaja: '0001-01-01'
+                motivoDeBaja: "  "
+                fecCaducidadTarj: 202010
+                fecCaduAntTar:
+                fechaCobroCuota: 202104
+                codGrupoCripto: '401'
+                desGrupoCripto: 'MAESTRO CLASICO                         '
+                identifiEmpleado: "                    "
+                indCamMasivoLim: S
+                indActualizaLim: S
+                indRestrPorActi: N
+                idnRestrComercio: N
+                indRestriImporte: S
+                codigoVisaphone:
+                numeroIntentosPin: 3
+                nombreEstampacion: 'KARLA R RUIZ A            '
+                indFotoPlastico: N
+                referenciaFoto: "                              "
+                codigoDeProducto: '44'
+                fecEnvioEstampa: '0001-01-01'
+                fecRechazoEstamp: '0001-01-01'
+                fecAcuseRecibo: '0001-01-01'
+                fecUltimaRenova: '0001-01-01'
+                fecRecupePlasti: '0001-01-01'
+                fecComuRetenPlas: '0001-01-01'
+                horaComuRetePlas: 00.00.00
+                condicionesEstampa: '901'
+                datosEstamVolunt1: "                                        "
+                datosEstamVolunt2: '19709831                                '
+                codigoDePromocion: "   "
+                indExeCompraCuota: S
+                indApRestTjtAutz: S
+                controlConcurrencia1: 2021-09-30-17.55.30.955181
+                controlConcurrencia2: 2017-02-15-12.25.00.445268
+              NOTICES:
+              - aviso: 66 OK. OPERACION EFECTUADAÓ
+            status: 200
   deprecated: false
 components:
   schemas:
