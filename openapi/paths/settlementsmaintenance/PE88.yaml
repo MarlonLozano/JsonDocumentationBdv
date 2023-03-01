@@ -33,9 +33,26 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "PEE0448 NO EXISTE EL TIPO DE PARENTESCO ESPECIFICADO."
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              NOTICES:
+              - aviso: "07 INCORPORACION EFECTUADAÓ\x9F"
+            status: 200
   deprecated: false
 components:
   schemas:

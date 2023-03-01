@@ -31,9 +31,58 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: 'EXE0235 NO EXISTE DISPONIBILIDAD EN EL ESTADO SELECCIONADO  '
+            data:
+              listExm3220:
+              noticesList:
+              journal:
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              listExm3220:
+              - idOperacion: 919970000017
+                nroCedulaRif: V0017706937
+                numeroPersona: '26398453'
+                estatusOperacion: V
+                montoDivisas: 300
+                montoBolivares: 2901.96
+                montoComision: 0
+                tasaCambio: 9.67323332
+                codigoDivisa: EUR
+                fechaValor: '2022-11-14'
+                oficinaOrigen: '9199'
+                oficinaDestino: '0353'
+                canalOrigen: '05'
+                cuentaDestinoDivisa: '01020501830007107841'
+              - idOperacion: 919970000016
+                nroCedulaRif: V0017706937
+                numeroPersona: '26398453'
+                estatusOperacion: V
+                montoDivisas: 120
+                montoBolivares: 1126.31
+                montoComision: 0
+                tasaCambio: 9.38593
+                codigoDivisa: USD
+                fechaValor: '2022-11-14'
+                oficinaOrigen: '9199'
+                oficinaDestino: '0353'
+                canalOrigen: '05'
+                cuentaDestinoDivisa: '01020501870007107867'
+              noticesList:
+              journal:
+            status: 200
   deprecated: false
 components:
   schemas:

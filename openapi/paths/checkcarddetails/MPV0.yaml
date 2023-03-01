@@ -43,9 +43,43 @@ post:
           masDatos: ""
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "MPE9999 EXISTEN ERRORES DE VALIDACION."
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              MPM0992:
+              - user:
+                terminal:
+                tipoDocumento: 'V '
+                numeroDocumento: '00006004214'
+                numeroPersona: "        "
+                codigoEntidad: "    "
+                centroDeAlta: "    "
+                cuenta: "            "
+                pan: "                      "
+                calidadParticipa: "  "
+                marcaTarjeta: "  "
+                operatividad: '1'
+                productoContrat: "  "
+                subproductoCont: "    "
+                reposicionamiento: "                                                  "
+                masDatos: " "
+              NOTICES:
+              - aviso: 66 OK. OPERACION EFECTUADAÓ
+            status: 200
   deprecated: false
 components:
   schemas:

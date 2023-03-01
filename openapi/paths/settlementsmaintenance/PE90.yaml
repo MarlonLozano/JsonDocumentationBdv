@@ -91,9 +91,47 @@ post:
           Terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "BGE0026 CAMPO CTA/NRO IDEN/NRO PER INCORRECTO.Ó\x9F"
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PEM47C:
+              - numeroPersona: '27417690'
+                secuenciaPariente: 1
+                tipoPersonaCargo: '005'
+                fechaNacimiento: '1975-06-25'
+                fechaNacimiento1: H
+                usuarioAlta: 'BDVN003 '
+                fechaDeAlta: '2022-10-22'
+                usuarioModificacion: 'BDVN003 '
+                numeroDeTerminal: BCVF
+                numeroDeTerminal1: '9199'
+                timeStamp: 2022-10-22-14.54.51.267643
+              - numeroPersona: '27417690'
+                secuenciaPariente: 1
+                tipoPersonaCargo: '005'
+                fechaNacimiento: '1975-06-25'
+                fechaNacimiento1: H
+                usuarioAlta: 'BDVN003 '
+                fechaDeAlta: '2022-10-22'
+                usuarioModificacion: 'BDVN003 '
+                numeroDeTerminal: BCVF
+                numeroDeTerminal1: '9199'
+                timeStamp: 2022-10-22-14.54.51.267643
+            status: 200
   deprecated: false
 components:
   schemas:

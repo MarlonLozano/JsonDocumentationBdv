@@ -87,9 +87,955 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          code: 1001
+          message: PEE0221 PERSONA INEXISTENTE EN LA BASE DE DATOS.
+          data:
+            WPM730:
+            - user:
+              terminal:
+              numeroDeCliente: '98214205'
+              tipoDeDocumento: '27'
+              numeroDeDocumento: "           "
+              secuenIdentfDocum: "  "
+              nombreDeFantasia: "                              "
+              primerApellido: "                    "
+              segundoApellido: "                    "
+              nombreRazonSocial: "                                        "
+              fechaNacimiConstit: "          "
+              tipoDePersona: " "
+              estadoPersona: "   "
+              condicion: "   "
+              nivelDeAcceso: " "
+              indRelacEntrePers: " "
+              indDeTenerContrat: " "
+              indDeTenerGrupo: " "
+              indicadorDeAviso: " "
+              indUso1: " "
+              indUso2: " "
+              indUso3: " "
+              indUso4: " "
+              indUso5: " "
+              tipoDeVia: "  "
+              calle: "                                                  "
+              obserDom1: "                                                                                                    "
+              obserDom2: "                                                                                                    "
+              bloqueNumCasillaA: "          "
+              localidadCiudad: "       "
+              comuna: "     "
+              codigoPostal: "        "
+              rutaCartero: 0
+              codigoProvincia: "  "
+              codigoPais: "   "
+              marcaNormalizacion: " "
+          status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              WPM7310:
+              - nroDeRegistro: 31
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN003 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-08.49.19.246348
+              - nroDeRegistro: 29
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA                             '
+                codPoblacion: '03     '
+                descpPoblacion: 'APURE                         '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-17.56.14.608658
+              - nroDeRegistro: 28
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA                             '
+                codPoblacion: '02     '
+                descpPoblacion: 'ANZOATEGUI                    '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-17.54.05.997259
+              - nroDeRegistro: 27
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA                             '
+                codPoblacion: '01     '
+                descpPoblacion: 'DISTRITO CAPITAL              '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-17.49.45.444059
+              - nroDeRegistro: 26
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA                             '
+                codPoblacion: '02     '
+                descpPoblacion: 'ANZOATEGUI                    '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN002 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-17.44.33.504729
+              - nroDeRegistro: 25
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA                             '
+                codPoblacion: '02     '
+                descpPoblacion: 'ANZOATEGUI                    '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN005 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-17.41.39.421874
+              - nroDeRegistro: 24
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA                             '
+                codPoblacion: '02     '
+                descpPoblacion: 'ANZOATEGUI                    '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN003 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-17.35.04.048700
+              - nroDeRegistro: 23
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA                             '
+                codPoblacion: '02     '
+                descpPoblacion: 'ANZOATEGUI                    '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN002 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-17.19.28.818447
+              - nroDeRegistro: 22
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN003 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-17.08.41.988551
+              - nroDeRegistro: 21
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN003 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-17.08.41.988441
+              - nroDeRegistro: 62
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-09'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-09-09.40.23.220987
+              - nroDeRegistro: 41
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA                             '
+                codPoblacion: '01     '
+                descpPoblacion: 'DISTRITO CAPITAL              '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN005 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-09.40.58.505364
+              - nroDeRegistro: 40
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ANDREA  PRADA                           '
+                codPoblacion: '03     '
+                descpPoblacion: 'APURE                         '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-09.40.36.728746
+              - nroDeRegistro: 39
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO                                   '
+                codPoblacion: '01     '
+                descpPoblacion: 'DISTRITO CAPITAL              '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-09.37.45.010088
+              - nroDeRegistro: 38
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ANDREA  PRADA                           '
+                codPoblacion: '03     '
+                descpPoblacion: 'APURE                         '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-09.35.23.188996
+              - nroDeRegistro: 37
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ANDREA  PEREZ                           '
+                codPoblacion: '03     '
+                descpPoblacion: 'APURE                         '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-09.34.35.248864
+              - nroDeRegistro: 36
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA                             '
+                codPoblacion: '01     '
+                descpPoblacion: 'DISTRITO CAPITAL              '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN002 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-09.34.11.196211
+              - nroDeRegistro: 35
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN002 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-08.49.54.153553
+              - nroDeRegistro: 34
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN002 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-08.49.54.153459
+              - nroDeRegistro: 33
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN002 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-08.49.54.153111
+              - nroDeRegistro: 32
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN003 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-08.49.19.246444
+              - nroDeRegistro: 51
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-06'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-06-10.54.36.991357
+              - nroDeRegistro: 50
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ARMANDO                                 '
+                codPoblacion: '09     '
+                descpPoblacion: 'DELTA AMACURO                 '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-06'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-06-10.54.36.987978
+              - nroDeRegistro: 49
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ANDREA VELEZ                            '
+                codPoblacion: '01     '
+                descpPoblacion: 'DISTRITO CAPITAL              '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-11.17.38.520305
+              - nroDeRegistro: 48
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA                             '
+                codPoblacion: '01     '
+                descpPoblacion: 'DISTRITO CAPITAL              '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-11.09.22.611211
+              - nroDeRegistro: 47
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-11.05.10.933374
+              - nroDeRegistro: 46
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-11.05.10.933279
+              - nroDeRegistro: 45
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-11.05.10.931420
+              - nroDeRegistro: 44
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA LOZANO                      '
+                codPoblacion: '01     '
+                descpPoblacion: 'DISTRITO CAPITAL              '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN003 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-10.43.00.309617
+              - nroDeRegistro: 43
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA                             '
+                codPoblacion: '01     '
+                descpPoblacion: 'DISTRITO CAPITAL              '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN002 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-10.42.11.099754
+              - nroDeRegistro: 42
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DIEGO PRADA                             '
+                codPoblacion: '01     '
+                descpPoblacion: 'DISTRITO CAPITAL              '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN005 '
+                fechaDeAlta: '2022-12-01'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-01-10.15.18.102182
+              - nroDeRegistro: 20
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN003 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-17.08.41.986855
+              - nroDeRegistro: 19
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN003 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.50.39.342358
+              - nroDeRegistro: 18
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.36.56.662977
+              - nroDeRegistro: 17
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.36.56.662886
+              - nroDeRegistro: 16
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ARMANDO                                 '
+                codPoblacion: '09     '
+                descpPoblacion: 'DELTA AMACURO                 '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.36.56.662477
+              - nroDeRegistro: 61
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-09'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-09-09.40.23.220888
+              - nroDeRegistro: 15
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.36.54.854705
+              - nroDeRegistro: 60
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ARMANDO                                 '
+                codPoblacion: '09     '
+                descpPoblacion: 'DELTA AMACURO                 '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-09'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-09-09.40.23.217913
+              - nroDeRegistro: 14
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.36.54.854611
+              - nroDeRegistro: 59
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'DATASET                                 '
+                codPoblacion: '09     '
+                descpPoblacion: 'DELTA AMACURO                 '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-07'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-07-14.35.46.250209
+              - nroDeRegistro: 13
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ARMANDO                                 '
+                codPoblacion: '09     '
+                descpPoblacion: 'DELTA AMACURO                 '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.36.54.853690
+              - nroDeRegistro: 58
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-07'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-07-14.21.55.671609
+              - nroDeRegistro: 12
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.34.53.847622
+              - nroDeRegistro: 57
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-07'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-07-14.21.55.671505
+              - nroDeRegistro: 11
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.34.53.847528
+              - nroDeRegistro: 56
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ARMANDO                                 '
+                codPoblacion: '09     '
+                descpPoblacion: 'DELTA AMACURO                 '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-07'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-07-14.21.55.669995
+              - nroDeRegistro: 55
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-07'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-07-11.17.11.905059
+              - nroDeRegistro: 54
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-07'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-07-11.17.11.904959
+              - nroDeRegistro: 8
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.34.20.247073
+              - nroDeRegistro: 53
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ARMANDO                                 '
+                codPoblacion: '09     '
+                descpPoblacion: 'DELTA AMACURO                 '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-07'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-07-11.17.11.901174
+              - nroDeRegistro: 9
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.34.20.247169
+              - nroDeRegistro: 52
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-06'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-12-06-10.54.36.991474
+              - nroDeRegistro: 10
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ARMANDO                                 '
+                codPoblacion: '09     '
+                descpPoblacion: 'DELTA AMACURO                 '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN004 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.34.53.847087
+              - nroDeRegistro: 4
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ARMANDO                                 '
+                codPoblacion: '09     '
+                descpPoblacion: 'DELTA AMACURO                 '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-11-29'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-29-14.42.04.857263
+              - nroDeRegistro: 5
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-11-29'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-29-14.42.04.863724
+              - nroDeRegistro: 6
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-11-29'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-29-14.42.04.863822
+              - nroDeRegistro: 7
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ARMANDO                                 '
+                codPoblacion: '09     '
+                descpPoblacion: 'DELTA AMACURO                 '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'BDVN001 '
+                fechaDeAlta: '2022-11-30'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-11-30-16.34.20.243901
+              - nroDeRegistro: 1
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'ARMANDO                                 '
+                codPoblacion: '09     '
+                descpPoblacion: 'DELTA AMACURO                 '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-10-24'
+                usuarioModifica: 'OPCE204 '
+                terminal: CGG1
+                sucursalOCentro: '0353'
+                timestamp: 2022-10-24-13.23.11.031584
+              - nroDeRegistro: 2
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Doge                                    '
+                codPoblacion: '10     '
+                descpPoblacion: 'FALCON                        '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-10-24'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-10-24-13.22.36.378648
+              - nroDeRegistro: 3
+                tipoDeRegistro: '1'
+                descripTipoReg: PROVEEDOR
+                nombreORazonSocia: 'Ford                                    '
+                codPoblacion: '11     '
+                descpPoblacion: 'GUARICO                       '
+                codPaisProveed: '432'
+                descripPais: VENEZUELA                 VENE
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-10-24'
+                usuarioModifica: "        "
+                terminal: "    "
+                sucursalOCentro: "    "
+                timestamp: 2022-10-24-13.22.36.378809
+              WPM730:
+              - user:
+                terminal:
+                numeroDeCliente: '21420527'
+                tipoDeDocumento: 'J '
+                numeroDeDocumento: '00050500147'
+                secuenIdentfDocum: '02'
+                nombreDeFantasia: "                              "
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombreRazonSocial: 'PANDOK CARUPANO  C A                    '
+                fechaNacimiConstit: '0001-01-01'
+                tipoDePersona: J
+                estadoPersona: '010'
+                condicion: PRO
+                nivelDeAcceso: '1'
+                indRelacEntrePers: S
+                indDeTenerContrat: N
+                indDeTenerGrupo: N
+                indicadorDeAviso: N
+                indUso1: N
+                indUso2: N
+                indUso3: N
+                indUso4: N
+                indUso5: N
+                tipoDeVia: "  "
+                calle: "                                                  "
+                obserDom1: "                                                                                                    "
+                obserDom2: "                                                                                                    "
+                bloqueNumCasillaA: "          "
+                localidadCiudad: "       "
+                comuna: "     "
+                codigoPostal: "        "
+                rutaCartero: 0
+                codigoProvincia: "  "
+                codigoPais: "   "
+                marcaNormalizacion: " "
+              NOTICES:
+              - aviso: 94 NO EXISTE DOMICILIO PPAL. ASOCIADOÓ
+              - aviso: 73 HAY MAS DE REGISTROS, SOLO SE MUESTRAN LOS PRIMEROS.Ó
+            status: 200
   deprecated: false
 components:
   schemas:

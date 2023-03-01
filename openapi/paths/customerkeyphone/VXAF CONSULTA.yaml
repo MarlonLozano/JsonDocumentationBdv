@@ -39,9 +39,32 @@ post:
           montoMaximoSenssibilidad3: ""
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            status: 200
+            data:
+              accion: C
+              tipoDocumento: V
+              numeroDocumento: '0006004212'
+              instrumentoComision: '01020777190002050728'
+              numeroTelefono: '04129658524'
+              idSensibilidad:
+              codigoRespuesta: '01'
+              mensajeRespuesta: 'NO ESTA AFILIADO                        '
+              pinBlockBidireccional: "    "
+              montoMaximoSenssibilidad1: "               "
+              montoMaximoSenssibilidad2: "               "
+              montoMaximoSenssibilidad3: "               "
   deprecated: false
 components:
   schemas:

@@ -87,9 +87,66 @@ post:
           timestamp: ""
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "PEE0221 PERSONA INEXISTENTE EN LA BASE DE DATOS.Ó\x9F"
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PEM0831:
+              - numeroCliente: '21420527'
+                numeroSecuencia: 1
+                codInstitucionBancaria: '0102'
+                descripcionInstitucionBancaria: BANCO DE VENEZUELA BANCO UNIVERSAL
+                nombreProducto: CUENTA CORRIENTE
+                numeroProducto: '01026464646461316979'
+                descripcionCifraProm: CINCO CIFRAS MEDIAS
+                usuarioAlta: OPCE204
+                fechaAlta: '2022-10-24'
+                usuarioModifica: ''
+                terminal: ''
+                sucursalCentro: ''
+                timestamp: 2022-10-24-11.26.52.563659
+              - numeroCliente: '21420527'
+                numeroSecuencia: 2
+                codInstitucionBancaria: '0102'
+                descripcionInstitucionBancaria: BANCO DE VENEZUELA BANCO UNIVERSAL
+                nombreProducto: CUENTA CORRIENTE
+                numeroProducto: '01026464646461316979'
+                descripcionCifraProm: CINCO CIFRAS MEDIAS
+                usuarioAlta: OPCE204
+                fechaAlta: '2022-11-03'
+                usuarioModifica: ''
+                terminal: ''
+                sucursalCentro: ''
+                timestamp: 2022-11-03-15.14.37.868242
+              - numeroCliente: '21420527'
+                numeroSecuencia: 3
+                codInstitucionBancaria: '0102'
+                descripcionInstitucionBancaria: BANCO DE VENEZUELA BANCO UNIVERSAL
+                nombreProducto: CUENTA CORRIENTE
+                numeroProducto: '01026464646461316979'
+                descripcionCifraProm: CINCO CIFRAS MEDIAS
+                usuarioAlta: OPCE204
+                fechaAlta: '2022-11-03'
+                usuarioModifica: ''
+                terminal: ''
+                sucursalCentro: ''
+                timestamp: 2022-11-03-15.14.49.035127
+              NOTICES:
+              - aviso: 94 NO EXISTE DOMICILIO PPAL. ASOCIADOÓ
+            status: 200
   deprecated: false
 components:
   schemas:

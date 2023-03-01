@@ -29,9 +29,89 @@ post:
           fechaIngresoUltimo: ""
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1010
+            message: Ha ocurrido un error
+            data:
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+            - codigoEntidad: '0102'
+              numeroPersona: '10138199'
+              tipoIngreso: '001'
+              fechaIngreso: '2014-03-22'
+              codigoMoneda: VES
+              importeIngreso: 1.520,00
+              limiteSuperior: "                  "
+              usuarioAlta: 'NM05840 '
+              fechaAlta: '2014-03-22'
+              usuarioModifica: 'OPCE205 '
+              terminalModifica: CG03
+              sucursalModifica: '0353'
+              timestamp: 2022-08-18-11.50.51.674329
+            - codigoEntidad: '0102'
+              numeroPersona: '10138199'
+              tipoIngreso: '001'
+              fechaIngreso: '2022-06-21'
+              codigoMoneda: VES
+              importeIngreso: 1.520,00
+              limiteSuperior: "                  "
+              usuarioAlta: 'BDVN005 '
+              fechaAlta: '2022-08-17'
+              usuarioModifica: 'OPCE219 '
+              terminalModifica: TC28
+              sucursalModifica: '0353'
+              timestamp: 2022-08-29-11.43.31.958138
+            - codigoEntidad: '0102'
+              numeroPersona: '10138199'
+              tipoIngreso: '001'
+              fechaIngreso: '2022-06-22'
+              codigoMoneda: VES
+              importeIngreso: 1.520,00
+              limiteSuperior: "                  "
+              usuarioAlta: 'BDVN003 '
+              fechaAlta: '2022-08-17'
+              usuarioModifica: 'OPCE219 '
+              terminalModifica: TC28
+              sucursalModifica: '0353'
+              timestamp: 2022-08-29-11.44.57.392781
+            - codigoEntidad: '0102'
+              numeroPersona: '10138199'
+              tipoIngreso: '003'
+              fechaIngreso: '2007-10-17'
+              codigoMoneda: VES
+              importeIngreso: 4.144.444.444,44
+              limiteSuperior: "                  "
+              usuarioAlta: 'NM02142 '
+              fechaAlta: '2007-10-17'
+              usuarioModifica: 'OPCE219 '
+              terminalModifica: TC28
+              sucursalModifica: '0353'
+              timestamp: 2022-08-17-16.22.31.441816
+            - codigoEntidad: '0102'
+              numeroPersona: '10138199'
+              tipoIngreso: '006'
+              fechaIngreso: '2021-10-08'
+              codigoMoneda: VES
+              importeIngreso: 1.116.111.111.111,11
+              limiteSuperior: "                  "
+              usuarioAlta: 'OPCE210 '
+              fechaAlta: '2021-10-08'
+              usuarioModifica: 'OPCE219 '
+              terminalModifica: TC28
+              sucursalModifica: '0353'
+              timestamp: 2022-08-17-16.18.40.012771
+            status: 200
   deprecated: false
 components:
   schemas:

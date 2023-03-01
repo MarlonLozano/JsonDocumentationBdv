@@ -43,6 +43,45 @@ post:
       content:
         application/json:
           example:
+            code: 1000
+            message: success
+            data:
+              BGM4011:
+              - numMovimiento: 4332
+                codigoOperacion: '1301'
+                importe: 10
+                concepto: "    "
+                fechaContable:
+                fechaContableTf: '2023-02-22'
+                fechaOperacional: '2023-02-22'
+                hora: '1730'
+                fechaValor: '2023-02-22'
+                numCheque: "         "
+                saldoNuevo: 1120.07
+                indicadorAutoManual: M
+                indicadorMovActualizado: N
+                indicadorAnulable: S
+                indicadorAnulado: N
+                indicadorCargoAbono: H
+                indicadorGiro: N
+                codigoUDAD: "   "
+                tipoCambio: "           "
+                codigoCanal: '01'
+                indicadorMovPrincipal: S
+                transaccion: BG61
+                codigoAplicacion: BG
+                terminalNIO: CGH1
+                fechaNIO: '2023-02-22'
+                horaNIO: '17302332'
+                conceptoAmpliado: "                              "
+                codigoAmpliado: 'ABONO EN EFECTIVO                 '
+                entidadUMO: '0102'
+                centroUMO: '0353'
+                userIdUMO: 'OPCE205 '
+                cajeroUMO: A
+                netNameUMO: 'CGH1    '
+                serial: '0000025122269'
+            status: 200
   deprecated: false
 components:
   schemas:

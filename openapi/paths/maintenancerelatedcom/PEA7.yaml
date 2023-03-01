@@ -21,9 +21,210 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: PEE0475 NO EXISTEN REFERENCIAS PARA LA PERSONA
+            data:
+              PEM4310:
+              - user:
+                terminal:
+                numeroDeCliente: '10132819'
+                tipoDocumento: 'W '
+                secuenciaDocumento: '01'
+                secuenciaDeTabla: 0
+                numeroDeDocumento: '00061079764'
+                nombreFantasia: "                              "
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombre: 'PAREDES M GHERA RD D                    '
+                fechaNacimientoa: '1998-05-19'
+                tipoDePersona: J
+                estadoPersona: '010'
+                condicionPersona: CLI
+                nivelAcceso: '0'
+                indicadorDeRel: N
+                tenerContratos:
+                pertenenciaGrupo: N
+                indicadorAviso: S
+                indicadorUso1: " "
+                indicadorUso2: " "
+                indicadorUso3: N
+                indicadorUso4: N
+                indicadorUso5: N
+                tipoDeVia: NA
+                nompreDeCalle: 'AV ORINOCO EDF ZONA EDUCATIVA                     '
+                observaciones1: 'VIA EL MUELLE                      EDF                      0                                       '
+                observaciones2: "        NULLS@NULLS.COM                                   ONAS
+                  VENEZUELA                            "
+                numeroDeBloque: "          "
+                nombreLocalidad: 'NA     '
+                nombreComu: "     "
+                codigoPost: "        "
+                rutaDeCartero: 0
+                codigoProvincia: '23'
+                codigoPais: '432'
+                marcaDeNormalizado: S
+                timestamp: S
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PEM4310:
+              - user:
+                terminal:
+                numeroDeCliente: '10138199'
+                tipoDocumento: 'J '
+                secuenciaDocumento: '01'
+                secuenciaDeTabla: 0
+                numeroDeDocumento: '00000000350'
+                nombreFantasia: 'ACUMULADORES DUNCAN CA        '
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombre: 'ACUMULADORES DUNCAN CA                  '
+                fechaNacimientoa: '1976-06-25'
+                tipoDePersona: J
+                estadoPersona: '703'
+                condicionPersona: CLI
+                nivelAcceso: '0'
+                indicadorDeRel: S
+                tenerContratos:
+                pertenenciaGrupo: S
+                indicadorAviso: S
+                indicadorUso1: N
+                indicadorUso2: N
+                indicadorUso3: N
+                indicadorUso4: N
+                indicadorUso5: N
+                tipoDeVia: AV
+                nompreDeCalle: 'MI AVENIDA                                        '
+                observaciones1: 'NAGEBEN CA                         22                       LOS
+                  RUICES                              '
+                observaciones2: "        DUNCA@GMAIL.COM                                                                             "
+                numeroDeBloque: "          "
+                nombreLocalidad: '1400916'
+                nombreComu: "     "
+                codigoPost: '00001209'
+                rutaDeCartero: 0
+                codigoProvincia: '14'
+                codigoPais: '432'
+                marcaDeNormalizado: N
+                timestamp: N
+              PEM431C:
+              - numeroDeCliente: '10138199'
+                secuenciaDeTabla: 1
+                codigoInformacion: INMUE
+                valorPresentado: 0
+                valorPorElBanco: 0
+                importeDelBien: 70000
+                grabadoHipoteca: '5'
+                numeroDeRol: "               "
+                fechaAdquisicion: '1986-06-30'
+                superficieCubierta: "          "
+                gastosAlquiler: 0
+                ingresosAlquiler: 0
+                nombreBien: "                    "
+                modeloAuto: "                    "
+                antiguedadBien: '7  '
+                relacionPropArrend: "   "
+                inmuebleVenta: N
+                cuotaPrestamo: 0
+                deudaPendiente: 0
+                oficinaDeCarga: "    "
+                condominio: " "
+                indicadorBien: N
+                gastosSeguros: 0
+                gastosImpuestos: 0
+                gastosExpensas: 0
+                otrosGastos: 0
+                nombreTenedor: "                    "
+                tenedorFondos: N
+                codigoMoneda: VES
+                importePatrimonio: 0
+                observaciones1: "                                                                                          "
+                observaciones2: "                                                                                          "
+                domicilioDelBien: "                                                                                                    "
+                ultimaModificacion: 2022-09-26-16.26.09.043551
+                aodelRodado: '2020-01-01'
+              - numeroDeCliente: '10138199'
+                secuenciaDeTabla: 3
+                codigoInformacion: INMUE
+                valorPresentado: 0
+                valorPorElBanco: 0
+                importeDelBien: 1
+                grabadoHipoteca: '5'
+                numeroDeRol: "               "
+                fechaAdquisicion: '1976-06-25'
+                superficieCubierta: "          "
+                gastosAlquiler: 0
+                ingresosAlquiler: 0
+                nombreBien: "                    "
+                modeloAuto: "                    "
+                antiguedadBien: '5  '
+                relacionPropArrend: "   "
+                inmuebleVenta: N
+                cuotaPrestamo: 0
+                deudaPendiente: 0
+                oficinaDeCarga: '000 '
+                condominio: " "
+                indicadorBien: N
+                gastosSeguros: 0
+                gastosImpuestos: 0
+                gastosExpensas: 0
+                otrosGastos: 0
+                nombreTenedor: "                    "
+                tenedorFondos: N
+                codigoMoneda: VES
+                importePatrimonio: 1
+                observaciones1: "                                                                                          "
+                observaciones2: "                                                                                          "
+                domicilioDelBien: "                                                                                                    "
+                ultimaModificacion: 2022-10-24-14.52.58.245590
+                aodelRodado: '2020-01-01'
+              - numeroDeCliente: '10138199'
+                secuenciaDeTabla: 2
+                codigoInformacion: INMUE
+                valorPresentado: 0
+                valorPorElBanco: 0
+                importeDelBien: 72000
+                grabadoHipoteca: '5'
+                numeroDeRol: "               "
+                fechaAdquisicion: '1976-08-01'
+                superficieCubierta: "          "
+                gastosAlquiler: 0
+                ingresosAlquiler: 0
+                nombreBien: "                    "
+                modeloAuto: "                    "
+                antiguedadBien: '5  '
+                relacionPropArrend: "   "
+                inmuebleVenta: N
+                cuotaPrestamo: 0
+                deudaPendiente: 0
+                oficinaDeCarga: '000 '
+                condominio: " "
+                indicadorBien: N
+                gastosSeguros: 0
+                gastosImpuestos: 0
+                gastosExpensas: 0
+                otrosGastos: 0
+                nombreTenedor: "                    "
+                tenedorFondos: N
+                codigoMoneda: VES
+                importePatrimonio: 0
+                observaciones1: "                                                                                          "
+                observaciones2: "                                                                                          "
+                domicilioDelBien: "                                                                                                    "
+                ultimaModificacion: 2022-09-26-17.16.55.499835
+                aodelRodado: '2020-01-01'
+            status: 200
   deprecated: false
 components:
   schemas:

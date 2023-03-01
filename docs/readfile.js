@@ -63,9 +63,9 @@ fs.readFile('definitivos.json', 'utf-8', (err, data) => {
                 console.log('Archivo' + nameOfPath + 'Creado Satisfactoriamente, numero:' + i);
             });
 
-            //Creacion de los directorios del API
+            //**********Creacion de los directorios del API**********************
             /*fs.mkdirSync('../openapi/paths/'+nameOfDirectory,{recursive:true});*/
-
+            //****************DESCOMENTAR EL FRAGMENTO PARA LA CREACION*********** */
             //Creacion de los archivos en las respectivas rutas
             /*fs.appendFile('../openapi/paths/'+nameOfDirectory+'/'+nameOfPath+'.yaml', ContenidoYaml + ContenidoComponentYaml, (err) => {
                 if (err) throw err;

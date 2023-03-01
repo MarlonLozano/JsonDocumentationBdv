@@ -29,9 +29,42 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: PEE0221 PERSONA INEXISTENTE EN LA BASE DE DATOS.
+            data:
+              PEM2090:
+              - user:
+                terminal:
+                entidad: '0102'
+                nroDePersona: '32142052'
+                nmDelUsuario: '7       '
+                fechaUltimaModif: "          "
+                descripcionCiudad: "                                        "
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PEM2090:
+              - user:
+                terminal:
+                entidad: '0102'
+                nroDePersona: '21420527'
+                nmDelUsuario: 'OPCE812 '
+                fechaUltimaModif: '2023-02-27'
+                descripcionCiudad: 'CARACAS                                 '
+              NOTICES:
+              - aviso: 00 CONSULTA EFECTUADAÓ
+            status: 200
   deprecated: false
 components:
   schemas:

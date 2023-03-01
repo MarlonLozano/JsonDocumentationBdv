@@ -21,9 +21,242 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: BGE0603 EN ESTOS MOMENTOS NO PODEMOS PROCESAR TU OPERACION. INTENTA LUEGO
+            data:
+              PEM2510:
+              - numeroPersona: '92134741'
+                tipoDocumento: '76'
+                secuenciaDocumento: '98'
+                numeroDocumento: "           "
+                secuenciaTelefono: 0
+                secuenciaDomicilio: 0
+                indicadorDeUso: " "
+                nombreFantasia: "                              "
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombrePersona: "                                        "
+                fechaNacimiento: "          "
+                tipoPersona: " "
+                estadoPersona: "   "
+                condicionPersona: "   "
+                nivelAcceso: " "
+                indiceRelacion: " "
+                indiceCondicion: " "
+                indiceGrupo: " "
+                indiceAviso: " "
+                indicadorDeUso1: " "
+                indicadorDeUso2: " "
+                indicadorDeUso3: " "
+                indicadorDeUso4: " "
+                indicadorDeUso5: " "
+                tipoDeVia: "  "
+                nombreCalle: "                                                  "
+                compleVar1: "                                                                                                    "
+                compleVar2: "                                                                                                    "
+                numeroBloque: "          "
+                nombreLocalidad: "       "
+                nombreComunidad: "     "
+                codigoPostal: "        "
+                rutaCartero: 0
+                codigoProvincia: "  "
+                codigoPais: "   "
+                marcaNormalizado: " "
+                timestamp: "                          "
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PEM2510:
+              - numeroPersona: '27417698'
+                tipoDocumento: 'J '
+                secuenciaDocumento: '01'
+                numeroDocumento: '00000651230'
+                secuenciaTelefono: 0
+                secuenciaDomicilio: 0
+                indicadorDeUso: " "
+                nombreFantasia: 'PRUEBAS                       '
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombrePersona: 'PRUEBAS                                 '
+                fechaNacimiento: '1976-06-25'
+                tipoPersona: J
+                estadoPersona: '010'
+                condicionPersona: NCL
+                nivelAcceso: '0'
+                indiceRelacion: N
+                indiceCondicion: N
+                indiceGrupo: N
+                indiceAviso: N
+                indicadorDeUso1: N
+                indicadorDeUso2: N
+                indicadorDeUso3: N
+                indicadorDeUso4: N
+                indicadorDeUso5: N
+                tipoDeVia: AV
+                nombreCalle: 'NOMBRE VIA                                        '
+                compleVar1: 'DESCRIPCION CONSTRUCCION           COMPLEMENTO              DESCRIPCION
+                  NUCLEO                      '
+                compleVar2: "        PRUEBAS@YAHOO.COM                                                                           "
+                numeroBloque: "          "
+                nombreLocalidad: '0100810'
+                nombreComunidad: "     "
+                codigoPostal: '00001030'
+                rutaCartero: 0
+                codigoProvincia: '01'
+                codigoPais: '432'
+                marcaNormalizado: N
+                timestamp: 2022-10-24-13.29.52.182205
+              PEM2520:
+              - secuenciaTelefono: 4
+                secuenciaDomicilio: 1
+                tipoDeTelefono: '001'
+                claseTelefono: NOR
+                prefijoTelefono: '0212   '
+                caracteristicaTelefono: '0058'
+                numeroTelefono: '1234654 '
+                numeroInterno: "                    "
+                observaciones: "                              "
+                timestamp: 2022-11-05-11.45.43.524437
+                tipoVia: AV
+                nombreCalle: 'NOMBRE VIA                                        '
+                complementoVar1: 'CRIPCION CONSTRUCCION           COMPLEMENTO              DESCRIPCION
+                  NUCLEO                         '
+                complementoVar2: "  PRUEBAS@YAHOO.COM                                                                                 "
+                nombreBloque: "          "
+                nombreLocalidad: '0100810'
+                nombreComunidad: "     "
+                codigoPostal: '00001030'
+                rutaCartero: 0
+                codigoProvincia: '01'
+                codigoPais: '432'
+                marcaNormalizado: N
+              - secuenciaTelefono: 5
+                secuenciaDomicilio: 1
+                tipoDeTelefono: '001'
+                claseTelefono: NOR
+                prefijoTelefono: '0212   '
+                caracteristicaTelefono: '0058'
+                numeroTelefono: '1255664 '
+                numeroInterno: "                    "
+                observaciones: "                              "
+                timestamp: 2022-11-07-11.40.33.976446
+                tipoVia: AV
+                nombreCalle: 'NOMBRE VIA                                        '
+                complementoVar1: 'CRIPCION CONSTRUCCION           COMPLEMENTO              DESCRIPCION
+                  NUCLEO                         '
+                complementoVar2: "  PRUEBAS@YAHOO.COM                                                                                 "
+                nombreBloque: "          "
+                nombreLocalidad: '0100810'
+                nombreComunidad: "     "
+                codigoPostal: '00001030'
+                rutaCartero: 0
+                codigoProvincia: '01'
+                codigoPais: '432'
+                marcaNormalizado: N
+              - secuenciaTelefono: 2
+                secuenciaDomicilio: 1
+                tipoDeTelefono: '001'
+                claseTelefono: NOR
+                prefijoTelefono: '0212   '
+                caracteristicaTelefono: '0058'
+                numeroTelefono: '1233774 '
+                numeroInterno: "                    "
+                observaciones: "                              "
+                timestamp: 2022-11-08-14.11.49.359045
+                tipoVia: AV
+                nombreCalle: 'NOMBRE VIA                                        '
+                complementoVar1: 'CRIPCION CONSTRUCCION           COMPLEMENTO              DESCRIPCION
+                  NUCLEO                         '
+                complementoVar2: "  PRUEBAS@YAHOO.COM                                                                                 "
+                nombreBloque: "          "
+                nombreLocalidad: '0100810'
+                nombreComunidad: "     "
+                codigoPostal: '00001030'
+                rutaCartero: 0
+                codigoProvincia: '01'
+                codigoPais: '432'
+                marcaNormalizado: N
+              - secuenciaTelefono: 3
+                secuenciaDomicilio: 1
+                tipoDeTelefono: '002'
+                claseTelefono: NOR
+                prefijoTelefono: '0212   '
+                caracteristicaTelefono: '0058'
+                numeroTelefono: '1234569 '
+                numeroInterno: "                    "
+                observaciones: "                              "
+                timestamp: 2022-10-24-14.02.35.421204
+                tipoVia: AV
+                nombreCalle: 'NOMBRE VIA                                        '
+                complementoVar1: 'CRIPCION CONSTRUCCION           COMPLEMENTO              DESCRIPCION
+                  NUCLEO                         '
+                complementoVar2: "  PRUEBAS@YAHOO.COM                                                                                 "
+                nombreBloque: "          "
+                nombreLocalidad: '0100810'
+                nombreComunidad: "     "
+                codigoPostal: '00001030'
+                rutaCartero: 0
+                codigoProvincia: '01'
+                codigoPais: '432'
+                marcaNormalizado: N
+              - secuenciaTelefono: 6
+                secuenciaDomicilio: 1
+                tipoDeTelefono: '001'
+                claseTelefono: NOR
+                prefijoTelefono: '0212   '
+                caracteristicaTelefono: '0058'
+                numeroTelefono: '1233754 '
+                numeroInterno: "                    "
+                observaciones: "                              "
+                timestamp: 2022-12-13-09.37.55.525650
+                tipoVia: AV
+                nombreCalle: 'NOMBRE VIA                                        '
+                complementoVar1: 'CRIPCION CONSTRUCCION           COMPLEMENTO              DESCRIPCION
+                  NUCLEO                         '
+                complementoVar2: "  PRUEBAS@YAHOO.COM                                                                                 "
+                nombreBloque: "          "
+                nombreLocalidad: '0100810'
+                nombreComunidad: "     "
+                codigoPostal: '00001030'
+                rutaCartero: 0
+                codigoProvincia: '01'
+                codigoPais: '432'
+                marcaNormalizado: N
+              - secuenciaTelefono: 1
+                secuenciaDomicilio: 1
+                tipoDeTelefono: '002'
+                claseTelefono: NOR
+                prefijoTelefono: '0212   '
+                caracteristicaTelefono: '0058'
+                numeroTelefono: '5416674 '
+                numeroInterno: "                    "
+                observaciones: "                              "
+                timestamp: 2022-10-24-13.29.52.182047
+                tipoVia: AV
+                nombreCalle: 'NOMBRE VIA                                        '
+                complementoVar1: 'CRIPCION CONSTRUCCION           COMPLEMENTO              DESCRIPCION
+                  NUCLEO                         '
+                complementoVar2: "  PRUEBAS@YAHOO.COM                                                                                 "
+                nombreBloque: "          "
+                nombreLocalidad: '0100810'
+                nombreComunidad: "     "
+                codigoPostal: '00001030'
+                rutaCartero: 0
+                codigoProvincia: '01'
+                codigoPais: '432'
+                marcaNormalizado: N
+            status: 200
   deprecated: false
 components:
   schemas:

@@ -27,9 +27,156 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: PEE1302 LA PERSONA NO TIENE RELACIONES
+            data:
+              PEM4200:
+              - user:
+                terminal:
+                numeroDeCliente: '21420252'
+                tipoDeDocumento: 'E '
+                numeroDeDocumento: '00084469986'
+                secuenIdentfDocum: '01'
+                codigoDeRelacion: "   "
+                numClienRelacionad: "        "
+                indRelacionPrincip: " "
+                segundaLlamada: 0
+                nombreDeFantasia: "                              "
+                primerApellido: 'FARIAS              '
+                segundoApellido: "                    "
+                nombreRazonSocial: 'GERALDO                                 '
+                fechaNacimiConstit: '0001-01-01'
+                tipoDePersona: F
+                estadoPersona: '010'
+                condicion: PRO
+                nivelDeAcceso: '1'
+                indRelacEntrePers: N
+                indDeTenerContrat: S
+                indDeTenerGrupo: N
+                indicadorDeAviso: N
+                indUso1: N
+                indUso2: N
+                indUso3: N
+                indUso4: N
+                indUso5: N
+                tipoDeVia: "  "
+                calle: "                                                  "
+                observaDom1: "                                                                                                    "
+                observaDom2: "                                                                                                    "
+                casillaAptoCorreo: "          "
+                localidadCiudad: "       "
+                comuna: "     "
+                codigoPostal: "        "
+                rutaCartero: 0
+                codigoProvincia: "  "
+                codigoPais: "   "
+                marcaNormalizacion: " "
+                timestamp: 2021-08-15-04.48.31.700138
+              NOTICES:
+              - aviso: 94 NO EXISTE DOMICILIO PPAL. ASOCIADOÓ
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PEM4200:
+              - user:
+                terminal:
+                numeroDeCliente: '21420527'
+                tipoDeDocumento: 'J '
+                numeroDeDocumento: '00050500147'
+                secuenIdentfDocum: '02'
+                codigoDeRelacion: "   "
+                numClienRelacionad: "        "
+                indRelacionPrincip: " "
+                segundaLlamada: 2
+                nombreDeFantasia: "                              "
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombreRazonSocial: 'PANDOK CARUPANO  C A                    '
+                fechaNacimiConstit: '0001-01-01'
+                tipoDePersona: J
+                estadoPersona: '010'
+                condicion: PRO
+                nivelDeAcceso: '1'
+                indRelacEntrePers: S
+                indDeTenerContrat: N
+                indDeTenerGrupo: N
+                indicadorDeAviso: N
+                indUso1: N
+                indUso2: N
+                indUso3: N
+                indUso4: N
+                indUso5: N
+                tipoDeVia: "  "
+                calle: "                                                  "
+                observaDom1: "                                                                                                    "
+                observaDom2: "                                                                                                    "
+                casillaAptoCorreo: "          "
+                localidadCiudad: "       "
+                comuna: "     "
+                codigoPostal: "        "
+                rutaCartero: 0
+                codigoProvincia: "  "
+                codigoPais: "   "
+                marcaNormalizacion: " "
+                timestamp: 2022-10-24-13.43.55.779560
+              PEM4210:
+              - numeroDeCliente: '21420527'
+                numeroClienRelacio: '15459575'
+                codigoDeRelacion: 'AP '
+                porcenDeParticipa: "     "
+                porcenDeUtilidad: "     "
+                indRelacionPrincip: N
+                observaciones1: '97977                        25/06/1978  PRUEBAS                                        01008101960-10-280212   6734343 '
+                observaciones2: "                                                                                                                        "
+                tipoDeDocumento: 'V '
+                numeroDeDocumento: '00005524040'
+                secuenciaDocumento: '01'
+                nombreDeFantasia: "                              "
+                primerApellido: 'PARACO              '
+                segundoApellido: 'FLORES              '
+                nombreRazonSocial: 'ROBERT              BAT                 '
+                fechaNacimiConstit: '1960-10-28'
+                tipoDePersona: F
+                estadoPersona: '010'
+                condicion: CLI
+                nivelDeAcceso: '0'
+                indRelacion:
+                indContratos:
+                indGrupos: N
+                indAvisos: N
+                indUso1: N
+                indUso2: S
+                indUso3: N
+                indUso4: N
+                indUso5: " "
+                tipoDeVia: AV
+                calle: 'BOGOTA                                            '
+                obsevacionDom1: 'SAN JOSE                           SAN JOSE                 LOS
+                  CAOBOS                              '
+                obsevacionDom2: "        PRUEBAS@GMAIL.COM                                                                           "
+                bloqueNumCasillaA: "          "
+                localidadCiudad: '0100810'
+                comuna: "     "
+                codigoPostal: '00001050'
+                rutaCartero: 0
+                codigoProvincia: '01'
+                codigoPais: '432'
+                marcaNormalizacion: N
+                timestamp: 2022-10-24-15.43.07.638099
+              NOTICES:
+              - aviso: 94 NO EXISTE DOMICILIO PPAL. ASOCIADOÓ
+            status: 200
   deprecated: false
 components:
   schemas:

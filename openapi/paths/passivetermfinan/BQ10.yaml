@@ -27,9 +27,24 @@ post:
           Terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "BGE2001 EL CHEQUE YA HA SIDO PAGADO ANTERIORMENTE."
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+            status: 200
   deprecated: false
 components:
   schemas:

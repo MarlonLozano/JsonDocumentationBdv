@@ -105,9 +105,21 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: 'mtdatacmppersjurnewPE67 : dta For input string: ""'
+            data:
+            status: 200
   deprecated: false
 components:
   schemas:

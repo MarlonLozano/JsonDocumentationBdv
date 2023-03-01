@@ -21,9 +21,73 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: PEE0221 PERSONA INEXISTENTE EN LA BASE DE DATOS.
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              WPM0561:
+              - nroClientePersJur: '27417698'
+                secuenciaReg: 2
+                tipoRegistro: '6'
+                tipoDeDocumento: 'V '
+                nroDeDocumento: '2109136    '
+                primerApellido: 'LEON                '
+                segundoApellido: 'LUIS                '
+                nombre: 'Luis                                    '
+                porcAccionario: 0
+                condicionEnEmpresa: RL
+                descripCondicion: ER REPRESENTANTE LEG
+                codigoCargo: '01'
+                descripCargo: 'ACCIONISTA                    '
+                indicadorPep: N
+                relacionPep: N
+                statusActivaInacti: " "
+                descripEstatus: 'ACTIVO  '
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-11-05'
+                usuarioModif: "        "
+                terminalModif: "    "
+                sucursalModif: "    "
+                timestamp: 2022-11-05-11.11.08.485431
+                indcadorEmpresaMixta: N
+              - nroClientePersJur: '27417698'
+                secuenciaReg: 3
+                tipoRegistro: '6'
+                tipoDeDocumento: 'V '
+                nroDeDocumento: '2109138    '
+                primerApellido: 'LEON                '
+                segundoApellido: 'LUIS                '
+                nombre: 'Luis                                    '
+                porcAccionario: 0
+                condicionEnEmpresa: RL
+                descripCondicion: ER REPRESENTANTE LEG
+                codigoCargo: '01'
+                descripCargo: 'ACCIONISTA                    '
+                indicadorPep: N
+                relacionPep: N
+                statusActivaInacti: " "
+                descripEstatus: 'ACTIVO  '
+                usuarioAlta: 'OPCE204 '
+                fechaDeAlta: '2022-12-12'
+                usuarioModif: "        "
+                terminalModif: "    "
+                sucursalModif: "    "
+                timestamp: 2022-12-12-10.57.22.571619
+                indcadorEmpresaMixta: N
+            status: 200
   deprecated: false
 components:
   schemas:

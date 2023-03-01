@@ -53,9 +53,74 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: BGE0515 SALDO INSUFICIENTE
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              BGMCAB:
+              - codigoCuentaCliente: '01020749510000366508'
+                codigoDivisa: VES
+                descripcionDivisa: 'BOLIVAR             '
+                importe: 1
+                codigoOperacion: '6278'
+                descripcionCodigo: 'CH                  '
+                codAplNio: BG
+                terminalNio: CG33
+                fechaNio: '2023-02-27'
+                horaNio: '21140428'
+                cheque: "         "
+                fechaOperacion: '2023-02-27'
+                fechaValor: '2023-02-27'
+                fechaContable: '2023-02-27'
+                codigoComision: "    "
+                importeComision: "               "
+                porcentajeComision: "       "
+                codigoImpuesto: "    "
+                importeImpuesto: "               "
+                centroOperacion: '0353'
+                descCentroOpe: "                    "
+                terminalOperacion: CG33
+                codigoTransOper: B581
+                numeroMovimiento: 3502
+                horaOperacion: '10:05'
+                serial: "             "
+                nombreTitular: 'FERRETERIA   INVERSIONES LEGO C.A 2     '
+                primerApellidoTitular: "                    "
+                segundoApellidotitular: "                    "
+                cedula: '00040528538'
+              NOTICES:
+              - aviso: 00 NUM. MOV.      3502Ó
+              JOURNAL:
+                centro: '0353'
+                netname: 'CG33    '
+                aplicac: BG
+                secuenc: '002'
+                divisa: VES
+                importe: '00000000000000100'
+                indDebHab: D
+                indCajComp: A
+                indTota: S
+                producto: '01020749510000366508'
+                referenc: 6278 270223     3502
+                masInform: "                    "
+                fechaOper: '2023-02-27'
+                fechaCont: '2023-02-27'
+                codtran: B581
+                numtask: '0001156'
+            status: 200
   deprecated: false
 components:
   schemas:

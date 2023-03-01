@@ -47,9 +47,80 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              VXMP2P:
+              - user:
+                terminal:
+                accion: C
+                numeroTelefono: '04142993774'
+                nacionalidad: V
+                numeroCedula: '00011201326'
+                numeroCorreo: ''
+                estadoPerfil: A
+                instrumentoCuenta: '01020497670100065077'
+                cantidadProductos: '02'
+                ipClavenet: 180.183.67.177
+                estadoNumero1: A
+                codProductoCanal: '01'
+                idProductoCanal: '04142061587'
+                cantidadDiaria1: '030'
+                montoMaxPorDia: '00000000006000000'
+                montoMaxPorTransa: '00000000006000000'
+                estadoNumero2: A
+                codProductoCanal2: '02'
+                idProductoCanal2: '04142993774'
+                cantidadDiaria2: '030'
+                montoMaxPorDia2: '00000000006000000'
+                montoMaxPorTransa2: '00000000006000000'
+                estadoNumero3: ''
+                codProductoCanal3: ''
+                idProductoCanal3: ''
+                cantidadDiaria3: ''
+                montoMaxPorDia3: ''
+                montoMaxPorTransa3: ''
+                estadoNumero4: ''
+                codProductoCanal4: ''
+                idProductoCanal4: ''
+                cantidadDiaria4: ''
+                montoMaxPorDia4: ''
+                montoMaxPorTransa4: ''
+                estadoNumero5: ''
+                codProductoCanal5: ''
+                idProductoCanal5: ''
+                cantidadDiaria5: ''
+                montoMaxPorDia5: ''
+                montoMaxPorTransa5: ''
+                estadoNumero6: ''
+                codProductoCanal6: ''
+                idProductoCanal6: ''
+                cantidadDiaria6: ''
+                montoMaxPorDia6: ''
+                montoMaxPorTransa6: ''
+                estadoNumero7: ''
+                codProductoCanal7: ''
+                idProductoCanal7: ''
+                cantidadDiaria7: ''
+                montoMaxPorDia7: ''
+                montoMaxPorTransa7: ''
+                sumatoriaDiaria: '00000000000000000'
+                sumatoriaCantidad: '000'
+                codigoRetorno: '00'
+                mensaje: ''
+                datos01: ''
+                datos02: '01010204976701000650770201020497670100065077'
+            status: 200
   deprecated: false
 components:
   schemas:

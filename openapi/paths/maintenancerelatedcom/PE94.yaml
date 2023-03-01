@@ -21,9 +21,115 @@ post:
           Terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: PEE0519 LA PERSONA NO TIENE FORMULARIOS
+            data:
+              PEM4410:
+              - user:
+                terminal:
+                numeroDePersona: '21420522'
+                tipoDocumento: 'J '
+                secuenciaDocumento: '01'
+                nroDocumento: '00000048054'
+                nombreDeFantasia: "                              "
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombrePersona: 'IMNICAT S R L                           '
+                fechaDeNacimientoa: '0001-01-01'
+                tipoDePersona: J
+                estadoDeLaPersona: '010'
+                condicionDePersona: PRO
+                nivelDeAc: '1'
+                indicadorDeRel: N
+                indicadorDeCo: N
+                indicadorDeGrupo: N
+                indicadorDeAviso: N
+                indicadorDeUso1: N
+                indicadorDeUso2: N
+                indicadorDeUso3: N
+                indicadorDeUso4: N
+                indicadorDeUso5: N
+                tipoDeVia: "  "
+                nompreDeCalle: "                                                  "
+                complementoVari_1: "                                                                                                    "
+                complementoVari_2: "                                                                                                    "
+                numeroDeBloque: "          "
+                nombreLocalidad: "       "
+                nombreComu: "     "
+                codigoPost: "        "
+                rutaDeCartero: 0
+                codigoProvincia: "  "
+                codigoPais: "   "
+                marcaDeNormalizado: " "
+                timestamp: 2022-10-28-12.07.07.612664
+              NOTICES:
+              - aviso: 94 NO EXISTE DOMICILIO PPAL. ASOCIADOÓ
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PEM4410:
+              - user:
+                terminal:
+                numeroDePersona: '21420527'
+                tipoDocumento: 'J '
+                secuenciaDocumento: '02'
+                nroDocumento: '00050500147'
+                nombreDeFantasia: "                              "
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombrePersona: 'PANDOK CARUPANO  C A                    '
+                fechaDeNacimientoa: '0001-01-01'
+                tipoDePersona: J
+                estadoDeLaPersona: '010'
+                condicionDePersona: PRO
+                nivelDeAc: '1'
+                indicadorDeRel: S
+                indicadorDeCo: N
+                indicadorDeGrupo: N
+                indicadorDeAviso: N
+                indicadorDeUso1: N
+                indicadorDeUso2: N
+                indicadorDeUso3: N
+                indicadorDeUso4: N
+                indicadorDeUso5: N
+                tipoDeVia: "  "
+                nompreDeCalle: "                                                  "
+                complementoVari_1: "                                                                                                    "
+                complementoVari_2: "                                                                                                    "
+                numeroDeBloque: "          "
+                nombreLocalidad: "       "
+                nombreComu: "     "
+                codigoPost: "        "
+                rutaDeCartero: 0
+                codigoProvincia: "  "
+                codigoPais: "   "
+                marcaDeNormalizado: " "
+                timestamp: 2022-10-24-13.43.55.779560
+              PEM4420:
+              - secuenciaDeContrat: 1
+                tipoDeContrat: '01'
+                numeroDeContrat: '456789              '
+                firmaDeContrato: '0002-01-01'
+                fechaVencimiento: '9999-12-31'
+                fechaInscripcion: '0001-01-01'
+                marcaDigitali: N
+                indDatosCompletos: N
+                timestamp: 2022-10-24-13.35.43.961787
+                observaciones: 'N                                                                                                                       '
+              NOTICES:
+              - aviso: 94 NO EXISTE DOMICILIO PPAL. ASOCIADOÓ
+            status: 200
   deprecated: false
 components:
   schemas:

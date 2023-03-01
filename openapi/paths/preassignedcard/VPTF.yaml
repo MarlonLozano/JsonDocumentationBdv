@@ -117,9 +117,29 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "VPE0098 INDICADOR HAY MAS ES INCORRECTOÓ\x9F"
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              VPMSC01:
+              - traceIdPlataforma: CGH10047297
+                traceIdSmartChane: "               "
+              NOTICES:
+              - aviso: '08 OPERACION O.K.Ó'
+            status: 200
   deprecated: false
 components:
   schemas:
