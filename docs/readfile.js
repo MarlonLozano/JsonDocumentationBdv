@@ -3,25 +3,26 @@ const path = require('path');
 const yaml = require('js-yaml');
 const YAML = require('yaml');
 
-const obj = yaml.load(fs.readFileSync('definitivos.yaml', { encoding: 'utf-8' }));
+const datosArchivo = yaml.load(fs.readFileSync('definitivos.yaml', { encoding: 'utf-8' }));
+//Conversión del archivo "yaml" en "json"
+fs.writeFileSync('definitivos.json', JSON.stringify(datosArchivo, null, 2));
 
-fs.writeFileSync('elyaml.json', JSON.stringify(obj, null, 2));
-
-fs.readFile('elyaml.json', 'utf-8', (err, data) => {
+//Lectura del archivo "json" y se carga la data a la variable "data"
+fs.readFile('definitivos.json', 'utf-8', (err, data) => {
     if (err) {
         console.log('error: ', err);
     } else {
 
-        const json = JSON.parse(data);
-        const paths = json.paths;
-        const xrd = json.components;
-        let schemas = xrd.schemas;
-        const component = Object.keys(xrd).map(function (y) {
-            let comp = xrd[y];
+        const dataInJson = JSON.parse(data);
+        const paths = dataInJson.paths;
+        const componentsOfData = dataInJson.components;
+        let schemas = componentsOfData.schemas;
+        const component = Object.keys(componentsOfData).map(function (y) {
+            let comp = componentsOfData[y];
             return comp;
         });
-        const count = Object.keys(paths).length;
-        const accso = Object.keys(paths).map(function (x) {
+        const numberOfPaths = Object.keys(paths).length;
+        const dataOfPaths = Object.keys(paths).map(function (x) {
             let elemento = paths[x];
             return elemento;
         });
@@ -29,49 +30,46 @@ fs.readFile('elyaml.json', 'utf-8', (err, data) => {
             let sch = schemas[z];
             return sch;
         });
-        console.log(count);
-        let definitivoComponent = { 'components': { 'schemas': component[0] } }
-        for (let i = 0; i < count; i++) {
 
-            const docYaml = new YAML.Document();
-            docYaml.contents = accso[i];
-            const ContenidoYaml = docYaml.toString();
+        let componentEstructure = { 'components': { 'schemas': component[0] } }
+        for (let i = 0; i < numberOfPaths; i++) {
+
+            const componentDataInYaml = new YAML.Document();
+            componentDataInYaml.contents = dataOfPaths[i];
+            const dataComponent = componentDataInYaml.toString();
             const ComponentYaml = new YAML.Document();
-            ComponentYaml.contents = definitivoComponent;
+            ComponentYaml.contents = componentEstructure;
             const ContenidoComponentYaml = ComponentYaml.toString();
-            //console.log(accso[126]);
-            const nombreNuevo = accso[i].post.summary;
-            const nombreCarpeta = accso[i].post.tags[0];
+            //console.log(dataOfPaths[126]);
+            const nameOfPath = dataOfPaths[i].post.summary;
+            const nameOfDirectory = dataOfPaths[i].post.tags[0];
 
-            const reInterno = definitivoComponent.components;
+            const reInterno = componentEstructure.components;
             const nombre = reInterno.schemas;
             const nueva = Object.keys(nombre);
-            const extension = {$ref: nombreCarpeta+'/'+nombreNuevo+'.yaml'};
+            const extension = { $ref: nameOfDirectory + '/' + nameOfPath + '.yaml' };
             const extYaml = new YAML.Document();
             extYaml.contents = extension;
             const yaa = extYaml.toString();
 
-            
+
             const rutaArchivo = [];
-            rutaArchivo.push('/'+nombreNuevo+':');
-            
+            rutaArchivo.push('/' + nameOfPath + ':');
 
-           const rutaDefinitiva = JSON.stringify(rutaArchivo +yaa); 
-   
-            //console.log(rutaDefinitiva);
-            //rutaArchivo.push('/'+nombreNuevo);
-            
+            const rutaDefinitiva = JSON.stringify(rutaArchivo + yaa);
 
-            fs.appendFile('../openapi/paths/pruebaArchivo2.yaml', rutaDefinitiva  , (err) => {
+            fs.appendFile('../openapi/paths/pruebaArchivo2.yaml', rutaDefinitiva, (err) => {
                 if (err) throw err;
-                console.log('Archivo'+nombreNuevo+'Creado Satisfactoriamente, numero:'+i);
+                console.log('Archivo' + nameOfPath + 'Creado Satisfactoriamente, numero:' + i);
             });
 
-            /*fs.mkdirSync('../openapi/paths/'+nombreCarpeta,{recursive:true});*/
-
-            /*fs.appendFile('../openapi/paths/'+nombreCarpeta+'/'+nombreNuevo+'.yaml', ContenidoYaml + ContenidoComponentYaml, (err) => {
+            //**********Creacion de los directorios del API**********************
+            /*fs.mkdirSync('../openapi/paths/'+nameOfDirectory,{recursive:true});*/
+            //****************DESCOMENTAR EL FRAGMENTO PARA LA CREACION*********** */
+            //Creacion de los archivos en las respectivas rutas
+            /*fs.appendFile('../openapi/paths/'+nameOfDirectory+'/'+nameOfPath+'.yaml', ContenidoYaml + ContenidoComponentYaml, (err) => {
                 if (err) throw err;
-                console.log('Archivo'+nombreNuevo+'Creado Satisfactoriamente, numero:'+i);
+                console.log('Archivo'+nameOfPath+'Creado Satisfactoriamente, numero:'+i);
             });*/
 
         }

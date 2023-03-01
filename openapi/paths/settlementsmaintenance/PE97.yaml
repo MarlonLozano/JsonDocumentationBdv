@@ -99,9 +99,67 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "BGE0026 CAMPO CTA/NRO IDEN/NRO PER INCORRECTO."
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PEM911:
+              - user:
+                terminal:
+                numeroDePersona: '27417690'
+                tipoDeDocumento: 'V '
+                nroDeDocumento: '00006985292'
+                secuenciaDocumento: '01'
+                nombreFantasia: "                              "
+                primerApellido: 'ALVAREZ             '
+                segundoApellido: 'SALAS               '
+                nombreRazonSocial: 'WENCESLAO                               '
+                fechaNacimiento: '1939-09-29'
+                tipoDePersona: F
+                estado: '010'
+                condicion: CLI
+                nivelDeAcceso: '0'
+                indicadorRelaciones: S
+                indicadorContratos: S
+                indicadorGrupo: N
+                indicadorAvisos: N
+                indicadorUno: N
+                indicadorDos: N
+                indicadorTres: N
+                indicadorCuatro: N
+                indicadorCinco: N
+                tipoDeVia: VI
+                nombreCalle: 'NA                                                '
+                observDomicilios1: 'NA                                                          NA                                      '
+                observDomicilios2: "        PRUEBAS@YAHOO.COM                                                                           "
+                nroBolque: "          "
+                localidad: '0100810'
+                comuna: "     "
+                codigoPostal: '00001030'
+                rutaCartero: 0
+                provincia: '01'
+                pais: '432'
+                marcaNormalizacion: N
+                areaDeNegocio: '340'
+                sexo: H
+                secuenciaNeg: "  "
+                secuenciaNegative: "   "
+                fechaInhabilitacion: "          "
+                fechaRehabilitacion: "          "
+            status: 200
   deprecated: false
 components:
   schemas:

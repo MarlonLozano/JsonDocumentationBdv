@@ -29,9 +29,67 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "QCE0039 CAMPO SESION DEBE SER NUMERICO"
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              QGRM831:
+              - entidad: '0102'
+                centroContable: '0353'
+                descripcionCentro: EL LIMON
+                fecha: 28-02-2023
+                divisa: VES
+                sesion: ACTUAL
+              QGRM832:
+              - subtotal: ''
+                destotal: ''
+                debe: ''
+                numeroOperacionesDebe: ''
+                haber: ''
+                numeroOperacionesHaber: ''
+              - subtotal: BG001
+                destotal: CUENTAS DE AHORRO
+                debe: '100,00'
+                numeroOperacionesDebe: '000001'
+                haber: '520,00'
+                numeroOperacionesHaber: '000014'
+              - subtotal: BG002
+                destotal: CUENTAS CORRIENTES
+                debe: '5,00'
+                numeroOperacionesDebe: '000001'
+                haber: '36,24'
+                numeroOperacionesHaber: '000001'
+              - subtotal: QG999
+                destotal: CAJA/EFECTIVO
+                debe: '556,24'
+                numeroOperacionesDebe: '000015'
+                haber: '105,00'
+                numeroOperacionesHaber: '000002'
+              - subtotal: ''
+                destotal: ''
+                debe: ''
+                numeroOperacionesDebe: ''
+                haber: ''
+                numeroOperacionesHaber: ''
+              QGRM833:
+              - totalDebe: '661,24'
+                operacionDebe: '000017'
+                totalHaber: '661,24'
+                operacionHaber: '000017'
+            status: 200
   deprecated: false
 components:
   schemas:

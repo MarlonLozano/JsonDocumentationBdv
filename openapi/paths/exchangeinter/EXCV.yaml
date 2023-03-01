@@ -57,9 +57,62 @@ post:
           user: PGFL001
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: 'EXE0212 CTA. DE OTRO BANCO  '
+            status: 200
+            data:
+              exm3410:
+              listexm3420:
+              notices:
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            status: 200
+            data: 
+              exm3410:
+                user:
+                terminal:
+                indOperacion: C
+                operacion: '5210'
+                oficinaOrigen: '9199'
+                oficinaDestino: '9199'
+                cuentaOrigenBs: '01020103960100045979'
+                cuentaDestinoDivisa: '01020221350000856898'
+                nacionalidad: V
+                cedulaRif: '0003982585'
+                nombreCliente: 'LAZA JUANA                     '
+                codigoDivisa: 'USD '
+                montoDivisa: 120
+                codigoActividadEconomica: '11  '
+                destinoFondo: '05  '
+                mediosPago: '02  '
+                montoBolivares: 2165.15
+                idOperacion: '919930150353'
+                tipoServicio: '10'
+                multiplo: "             "
+                tasaCompra: 0
+                tasaVenta: 18.042943
+                totalOperacion: 2165.15
+                cuentaComision: "                    "
+              listexm3420:
+              - importeComision: 0
+                porcentajeComision: 0
+                totalComision: 0
+                descripcionComision: 'COMISION PREST. SERV (0,5%)             '
+              - importeComision: 0
+                porcentajeComision: 0
+                totalComision: 0
+                descripcionComision: 'COMISION ADJUD. DIVI. (0,00%)           '
+              notices:
   deprecated: false
 components:
   schemas:

@@ -57,9 +57,95 @@ post:
           masDatos: ""
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: MPE9999 EXISTEN ERRORES DE VALIDACION.
+            data:
+              NOTICES:
+              - aviso: "70 NO EXISTE REGISTRO PARA EL CRITERIO DE SELECCIONÓ\x9F"
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              MPM0491:
+              - user:
+                terminal: 'GG34    '
+                codigoEntidad: '0102'
+                numeroSecuencial: 102203431434288
+                centroAltaCtaTar: '0190'
+                cuentaDeTarjeta: '440000167493'
+                numeroDeTarjeta: '5899416689527423      '
+                codigoDeComercio: "               "
+                fecIniModificacion: "          "
+                fecFinModificacion: "          "
+                fechaModificacion: '2022-10-22'
+                horaModificacion: 10.03.42
+                tipoAcceso: 1
+                nombreProceso: 'ATE463    '
+                descripcionProceso: 'ALTA DE TARJETA               '
+                tablaModificada: MPDT009
+                nombreCampo: "                    "
+                valorActual: "                                                                      "
+                valorAnterior: "                                                                      "
+                usuario: 'OPCE812 '
+                indicadorAlta: A
+                masDatos: " "
+              - user:
+                terminal: 'GG34    '
+                codigoEntidad: '0102'
+                numeroSecuencial: 102203434134288
+                centroAltaCtaTar: '0190'
+                cuentaDeTarjeta: '440000167493'
+                numeroDeTarjeta: '5899416689527423      '
+                codigoDeComercio: "               "
+                fecIniModificacion: "          "
+                fecFinModificacion: "          "
+                fechaModificacion: '2022-10-22'
+                horaModificacion: 10.03.42
+                tipoAcceso: 1
+                nombreProceso: 'ATE460    '
+                descripcionProceso: ALTA DE CUENTA DE DOMICILIACIO
+                tablaModificada: MPDT014
+                nombreCampo: "                    "
+                valorActual: "                                                                      "
+                valorAnterior: "                                                                      "
+                usuario: 'OPCE812 '
+                indicadorAlta: A
+                masDatos: " "
+              - user:
+                terminal: 'GG34    '
+                codigoEntidad: '0102'
+                numeroSecuencial: 322210034334288
+                centroAltaCtaTar: '0190'
+                cuentaDeTarjeta: '440000167493'
+                numeroDeTarjeta: "                      "
+                codigoDeComercio: "               "
+                fecIniModificacion: "          "
+                fecFinModificacion: "          "
+                fechaModificacion: '2022-10-22'
+                horaModificacion: 10.03.42
+                tipoAcceso: 0
+                nombreProceso: 'ATE462    '
+                descripcionProceso: 'ALTA DE CUENTA O CONTRATO     '
+                tablaModificada: MPDT007
+                nombreCampo: "                    "
+                valorActual: "                                                                      "
+                valorAnterior: "                                                                      "
+                usuario: 'OPCE812 '
+                indicadorAlta: A
+                masDatos: " "
+              NOTICES:
+              - aviso: 66 OK. OPERACION EFECTUADAÓ
+            status: 200
   deprecated: false
 components:
   schemas:

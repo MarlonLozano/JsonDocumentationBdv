@@ -109,9 +109,126 @@ post:
           nombrePrograma: WP54
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: PEE0221 PERSONA INEXISTENTE EN LA BASE DE DATOS.
+            data:
+              WPM540:
+              - user:
+                terminal:
+                numeroCliente: '35621420'
+                tipoDocumento: '52'
+                numeroDocumento: '7          '
+                secuenciaDocumento: "  "
+                nombreFantasia: "                              "
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombrePersona: "                                        "
+                fechaNacimiento: "          "
+                tipoPersona: " "
+                estadoCliente: "   "
+                condicionCliente: "   "
+                nivelAcceso: " "
+                indicadorRelaciones: " "
+                indicadorContratos: " "
+                indicadorGrupo: " "
+                indicadorAviso: " "
+                indicadorUso1: " "
+                indicadorUso2: " "
+                indicadorUso3: " "
+                indicadorUso4: " "
+                indicadorUso5: " "
+                tipoVia: "  "
+                calle: "                                                  "
+                observacionDomicilio1: "                                                                                                    "
+                observacionDomicilio2: "                                                                                                    "
+                bloqueNumero: "          "
+                localidadCiudad: "       "
+                comuna: "     "
+                codigoPostal: "        "
+                rutaCartero: 0
+                codigoProvincia: "  "
+                codigoPaisDomiciliacion: "   "
+                marcaNormalizacion: " "
+                numeroSubsidiarias: "   "
+                codigoPais: "   "
+                numeroEmpleados: "      "
+                egresosMensuales: "                  "
+                yearUltimaDeclaracionISLR: "    "
+                montoUltimaDeclaracionISLR: "                  "
+                usuarioAlta: "        "
+                fechaAlta: "          "
+                usuarioModificacion: "        "
+                terminalModificacion: "    "
+                sucursalModificacion: "    "
+                timeStamp: "                          "
+                nombrePrograma: "        "
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              WPM540:
+              - user:
+                terminal:
+                numeroCliente: '21420527'
+                tipoDocumento: 'J '
+                numeroDocumento: '00050500147'
+                secuenciaDocumento: '02'
+                nombreFantasia: "                              "
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombrePersona: 'PANDOK CARUPANO  C A                    '
+                fechaNacimiento: '0001-01-01'
+                tipoPersona: J
+                estadoCliente: '010'
+                condicionCliente: PRO
+                nivelAcceso: '1'
+                indicadorRelaciones: S
+                indicadorContratos: N
+                indicadorGrupo: N
+                indicadorAviso: N
+                indicadorUso1: N
+                indicadorUso2: N
+                indicadorUso3: N
+                indicadorUso4: N
+                indicadorUso5: N
+                tipoVia: "  "
+                calle: "                                                  "
+                observacionDomicilio1: "                                                                                                    "
+                observacionDomicilio2: "                                                                                                    "
+                bloqueNumero: "          "
+                localidadCiudad: "       "
+                comuna: "     "
+                codigoPostal: "        "
+                rutaCartero: 0
+                codigoProvincia: "  "
+                codigoPaisDomiciliacion: "   "
+                marcaNormalizacion: " "
+                numeroSubsidiarias: '50 '
+                codigoPais: '432'
+                numeroEmpleados: '850   '
+                egresosMensuales: 785200000
+                yearUltimaDeclaracionISLR: '2005'
+                montoUltimaDeclaracionISLR: 74100000
+                usuarioAlta: 'OPCE207 '
+                fechaAlta: '2022-10-24'
+                usuarioModificacion: 'OPCE207 '
+                terminalModificacion: TD39
+                sucursalModificacion: '0353'
+                timeStamp: 2022-10-24-11.38.22.469766
+                nombrePrograma: "        "
+              NOTICES:
+              - aviso: 94 NO EXISTE DOMICILIO PPAL. ASOCIADOÓ
+            status: 200
   deprecated: false
 components:
   schemas:

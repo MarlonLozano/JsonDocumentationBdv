@@ -23,9 +23,40 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "BGE0603 EN ESTOS MOMENTOS NO PODEMOS PROCESAR TU OPERACION. INTENTA LUEGOÓ\x9F"
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PECC3140:
+              - numeroRelacionBancaria: '21420527'
+                opcionConsulta: '0'
+                numeroCliente: '00645245'
+                tipoPersona: F
+                nombreRazonSocial: 'ANGEL E                                 '
+                apellidoNombreFantasi: 'CHIRINOS                                '
+                nivelAcceso: '0'
+                indicadorAviso: N
+                numeroCcc: "                    "
+                codigoProducto: "  "
+                codigoSubproducto: "    "
+                codigoMoneda: "   "
+                descripcion: "                         "
+                estado: " "
+                fechaEstadoRelban: "          "
+            status: 200
   deprecated: false
 components:
   schemas:

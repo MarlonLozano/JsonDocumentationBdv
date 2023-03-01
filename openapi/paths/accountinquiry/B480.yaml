@@ -28,8 +28,25 @@ post:
     required: true
   responses:
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              NOTICES:
+              - aviso: 55 ADULTO MAYOR NO TIENE PREASIGNADAÓ
+            status: 200
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "QCE0040 EL CAMPO ESTADO ES OBLIGATORIO"
+            data: {}
+            status: 200
   deprecated: false
 components:
   schemas:

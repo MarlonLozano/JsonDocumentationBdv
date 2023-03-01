@@ -125,9 +125,135 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: PEE0221 PERSONA INEXISTENTE EN LA BASE DE DATOS.
+            data:
+              WPM500:
+              - user:
+                terminal:
+                numeroDePersona: '98274176'
+                tipoDeDocumento: '90'
+                numeroDeDocumento: "           "
+                secuenciaDocumento: "  "
+                nombreDeFantasia: "                              "
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombreRazonSocial: "                                        "
+                fechaNacimiento: "          "
+                tipoDePersona: " "
+                estadoPersona: "   "
+                condicionPersona: "   "
+                nivelDeAcceso: " "
+                indicadorRelaciones: " "
+                indicadorContratos: " "
+                indicadorGrupos: " "
+                indicadorAvisos: " "
+                indicadorNro1: " "
+                indicadorNro2: " "
+                indicadorNro3: " "
+                indicadorNro4: " "
+                indicadorNro5: " "
+                indRelDependencia: " "
+                nombreEmprRelDep: "                              "
+                tipoDocRelDepende: "  "
+                nroDocRelDependen: "           "
+                tipoIngresoRelDep: "   "
+                fechaIngRelDepend: "          "
+                cargoEmpRelDepend: "  "
+                ramoEmpresaRelDep: "    "
+                indicadorNegPropio: " "
+                nombreEmprNegProp: "                              "
+                tipoDocNegPropio: "  "
+                nroDocNegPropio: "           "
+                tipoIngrNegPropio: "   "
+                fechaConstNegProp: "          "
+                datosRegNegPropio: "                                                                                                    "
+                ramoEmprNegPropio: "    "
+                direcP1NegPropio:
+                direcP2NegPropio:
+                codAreaNegPropio: "       "
+                codPaisNegPropio: "    "
+                nroTelefNegPropio: "        "
+                indicadorOtrosIngr: " "
+                areaGenIngrOtrIn: "    "
+                tipoIngrOtrosIngr: "   "
+                usuarioDeAlta: "        "
+                fechaDeAlta: "          "
+                usuarioModificacion: "        "
+                terminalModificacio: "    "
+                sucursalModificacio: "    "
+                stampDelRegistro: "                          "
+                nombrePrograma: "        "
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          code: 1000
+          message: success
+          data:
+            WPM500:
+            - user:
+              terminal:
+              numeroDePersona: '27417690'
+              tipoDeDocumento: 'V '
+              numeroDeDocumento: '00006985292'
+              secuenciaDocumento: '01'
+              nombreDeFantasia: "                              "
+              primerApellido: 'ALVAREZ             '
+              segundoApellido: 'SALAS               '
+              nombreRazonSocial: 'WENCESLAO                               '
+              fechaNacimiento: '1939-09-29'
+              tipoDePersona: F
+              estadoPersona: '010'
+              condicionPersona: CLI
+              nivelDeAcceso: '0'
+              indicadorRelaciones: S
+              indicadorContratos: S
+              indicadorGrupos: N
+              indicadorAvisos: N
+              indicadorNro1: N
+              indicadorNro2: N
+              indicadorNro3: N
+              indicadorNro4: N
+              indicadorNro5: N
+              indRelDependencia: S
+              nombreEmprRelDep: 'POLARCITA                     '
+              tipoDocRelDepende: 'J '
+              nroDocRelDependen: '00000003505'
+              tipoIngresoRelDep: '001'
+              fechaIngRelDepend: '2020-06-25'
+              cargoEmpRelDepend: '33'
+              ramoEmpresaRelDep: AGRC
+              indicadorNegPropio: S
+              nombreEmprNegProp: 'DUMCAN                        '
+              tipoDocNegPropio: 'J '
+              nroDocNegPropio: '00000013655'
+              tipoIngrNegPropio: '007'
+              fechaConstNegProp: '2022-09-21'
+              datosRegNegPropio: 'PRUEBAS                                                                                             '
+              ramoEmprNegPropio: AGRC
+              direcP1NegPropio:
+              direcP2NegPropio:
+              codAreaNegPropio: '0212   '
+              codPaisNegPropio: '0058'
+              nroTelefNegPropio: '8979464 '
+              indicadorOtrosIngr: S
+              areaGenIngrOtrIn: '0004'
+              tipoIngrOtrosIngr: '003'
+              usuarioDeAlta: 'OPCE204 '
+              fechaDeAlta: '2022-02-15'
+              usuarioModificacion: "        "
+              terminalModificacio: "    "
+              sucursalModificacio: "    "
+              stampDelRegistro: 2022-10-22-16.12.23.746905
+              nombrePrograma: "        "
+          status: 200
   deprecated: false
 components:
   schemas:

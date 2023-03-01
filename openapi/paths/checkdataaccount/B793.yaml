@@ -28,8 +28,23 @@ post:
     required: true
   responses:
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "VME0074 DISTRIBUIDOR NO CORRESPONDEÓ\x9F"
+            data: {}
+            status: 200
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "VME0074 DISTRIBUIDOR NO CORRESPONDEÓ\x9F"
+            data: {}
+            status: 200
   deprecated: false
 components:
   schemas:

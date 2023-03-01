@@ -21,9 +21,55 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: MPE9999 EXISTEN ERRORES DE VALIDACION.
+            data:
+              NOTICES:
+              - aviso: "03 PAN DE LA TARJETA INEXISTENTEÓ\x9F"
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              MPM0014:
+              - panDeLaTarjeta: '5899415611546865      '
+                indDeOrdenDeCta: P
+                cuentaDeCargoNuev: "                              "
+                cuentaDeCargoAntg: '01020121720106542443          '
+                claveDeLaMoneda: 928
+                indTipoDeCtacargo: '4 '
+                indDeCccAjena: N
+                productoDeCcc: '01'
+                subproductoDeCcc: '1007'
+                indActivoPasivo: P
+                fechaDeAlta: '2022-10-31'
+                fechaDeBaja: '0001-01-01'
+                controlDeConcurren: 2022-10-31-13.46.08.603272
+              - panDeLaTarjeta: '5899415611546865      '
+                indDeOrdenDeCta: C
+                cuentaDeCargoNuev: "                              "
+                cuentaDeCargoAntg: '01020121790000280406          '
+                claveDeLaMoneda: 928
+                indTipoDeCtacargo: '1 '
+                indDeCccAjena: N
+                productoDeCcc: '02'
+                subproductoDeCcc: '2007'
+                indActivoPasivo: P
+                fechaDeAlta: '2022-10-31'
+                fechaDeBaja: '0001-01-01'
+                controlDeConcurren: 2022-10-31-13.46.17.232845
+              NOTICES:
+              - aviso: 66 OK. OPERACION EFECTUADAÓ
+            status: 200
   deprecated: false
 components:
   schemas:

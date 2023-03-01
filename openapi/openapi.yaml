@@ -157,6 +157,8 @@ paths:
     $ref: paths/checkcardbalance/MP5D.yaml  
   /MPL1:  
     $ref: paths/checkcardbalance/MPL1.yaml  
+  /MP9Z:  
+    $ref: paths/checkcardbalance/MP9Z.yaml 
   /MP5A:  
     $ref: paths/cardmanagment/MP5A.yaml  
   /MPB8:  

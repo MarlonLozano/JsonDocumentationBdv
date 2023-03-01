@@ -105,9 +105,64 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: ''
+            data:
+              VXMP2C:
+              - user:
+                terminal:
+                accion: C
+                tipoDeDocumento: 'J '
+                rifComercio: '00000031732293'
+                cantiDeProducto: '01'
+                cantiDeAutorizado: '01'
+                estadoPerfil: A
+                nombreDelComercio: 'COKETERIAS DULCINEAC.A                                                                              '
+                mailCorreo: "                                                                                                    "
+                ipComercio: '180.182.76.38                           '
+                cod1IdProducto: '0101                                                '
+                nac1YCi1Asociado: V 00010548990
+                estado1TeleInstru: A 04142478800     01020680410000011691
+                montoMinMaxYCta: '0000000000000000000000000000000000000'
+                cod2IdProducto: "                                                    "
+                nac2YCi2Asociado: "             "
+                estado2TeleInstru: "                                      "
+                montoMinMaxYCta2: '0000000000000000000000000000000000000'
+                cod3IdProducto: "                                                    "
+                nac3YCi3Asociado: "             "
+                estado1TeleInstru2: "                                      "
+                montoMinMaxYCta3: '0000000000000000000000000000000000000'
+                cod4IdProducto: "                                                    "
+                nac4YCi1Asociado: "             "
+                estado1TeleInstru3: "                                      "
+                montoMinMaxYCta4: '0000000000000000000000000000000000000'
+                cod5IdProducto: "                                                    "
+                nac5YCi1Asociado: "             "
+                estado5TeleInstru: "                                      "
+                montoMinMaxYCta5: '0000000000000000000000000000000000000'
+                cod6IdProducto: "                                                    "
+                nac6YCi6Asociado: "             "
+                estado6TeleInstru: "                                      "
+                montoMinMaxYCta6: '0000000000000000000000000000000000000'
+                cod7IdProducto: "                                                    "
+                nac7YCi7Asociado: "             "
+                estado7TeleInstru: "                                      "
+                montoMinMaxYCta7: '0000000000000000000000000000000000000'
+                codigoRetorno: '00'
+                descripcionDelRC: "                                                                                                    "
+                datosAdicional1: "                                                                                                0221"
+                datosAdicional2: "                                                                                                    "
+            status: 200
   deprecated: false
 components:
   schemas:

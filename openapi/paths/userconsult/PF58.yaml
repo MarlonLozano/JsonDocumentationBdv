@@ -103,9 +103,776 @@ post:
           terminal: "0190"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: PEE0221 PERSONA INEXISTENTE EN LA BASE DE DATOS.
+            data:
+              WPM802:
+              - user:
+                terminal:
+                numeroCliente: 0250d101
+                tipoDeDocumento: '4 '
+                numeroDeDocumento: "           "
+                secuenciaIdentificacion: "  "
+                calidadParticipe: "  "
+                entidadContrato: "    "
+                oficinaContrato: "    "
+                numeroContrato: "            "
+                codigoDeProducto: "  "
+                codigoDeSubprod: "    "
+                calidadParticipac: "  "
+                indicadorSeg: " "
+                nombreDeFantasia: "                              "
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombreCliente: "                                        "
+                fechaNacimiento: "          "
+                tipoDePersona: " "
+                estadoDelCliente: "   "
+                condicionCliente: "   "
+                nivelDeAcceso: " "
+                indicadorRelacion: " "
+                indicadorContratos: " "
+                indicadorDeGrupo: " "
+                indicadorDeAvisos: " "
+                indicador1: " "
+                indicador2: " "
+                indicador3: " "
+                indicador4: " "
+                indicador5: " "
+                tipoDeVia: "  "
+                calle: "                                                  "
+                observaciones1: "                                                                                                    "
+                observaciones2: "                                                                                                    "
+                bloqueNumero: "          "
+                localidadCiudad: "       "
+                comuna: "     "
+                codigoPostal: "        "
+                rutaCartero: false
+                codigoProvincia: "  "
+                codigoPais: "   "
+                marcaNormalizacion: " "
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              WPM802:
+              - user:
+                terminal:
+                numeroCliente: '02501014'
+                tipoDeDocumento: 'V '
+                numeroDeDocumento: '00011201326'
+                secuenciaIdentificacion: '01'
+                calidadParticipe: "  "
+                entidadContrato: "    "
+                oficinaContrato: "    "
+                numeroContrato: "            "
+                codigoDeProducto: "  "
+                codigoDeSubprod: "    "
+                calidadParticipac: "  "
+                indicadorSeg: N
+                nombreDeFantasia: "                              "
+                primerApellido: 'AZUAJE              '
+                segundoApellido: 'GONZALEZ            '
+                nombreCliente: 'JOSE                DOMINGO             '
+                fechaNacimiento: '1958-09-24'
+                tipoDePersona: F
+                estadoDelCliente: '010'
+                condicionCliente: CLI
+                nivelDeAcceso: '0'
+                indicadorRelacion: N
+                indicadorContratos: S
+                indicadorDeGrupo: N
+                indicadorDeAvisos: N
+                indicador1: N
+                indicador2: S
+                indicador3: S
+                indicador4: N
+                indicador5: N
+                tipoDeVia: CJ
+                calle: 'LA TRINITARIA                                     '
+                observaciones1: 'LAS TRINITARIAS                    PISO 9 APTO 0902         UD5
+                  CARICUAO                            '
+                observaciones2: "        AZUAJEJOSE2010@GMAIL.COM                                                                    "
+                bloqueNumero: "          "
+                localidadCiudad: '0400087'
+                comuna: "     "
+                codigoPostal: '00001030'
+                rutaCartero: false
+                codigoProvincia: '04'
+                codigoPais: '432'
+                marcaNormalizacion: N
+              WPM80A:
+              - numeroCliente: '02501014'
+                numeroContrato: '090300063010'
+                oficinaCcc: '0125'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '03'
+                codigoSubproducto: '0000'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '040000152848'
+                oficinaCcc: '0190'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 2
+                codigoProducto: '02'
+                codigoSubproducto: '2110'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-10-20-13.41.36.603073
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '910008447843'
+                oficinaCcc: '0148'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 4
+                codigoProducto: '02'
+                codigoSubproducto: '2300'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-10-25-16.02.44.044194
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '320000858113'
+                oficinaCcc: '0221'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2021'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2023-02-22-10.46.20.095142
+                codigoMoneda: USD
+              - numeroCliente: '02501014'
+                numeroContrato: '090100005611'
+                oficinaCcc: '0190'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '01'
+                codigoSubproducto: '1240'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '810000393526'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2007'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '650000844060'
+                oficinaCcc: '0886'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '97'
+                codigoSubproducto: '0062'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '800000397360'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2007'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-10-03-09.02.07.352079
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '810007150979'
+                oficinaCcc: '0501'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2022'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: USD
+              - numeroCliente: '02501014'
+                numeroContrato: '810000396921'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2007'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-08-03-12.30.04.183105
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '540000160087'
+                oficinaCcc: '9011'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '54'
+                codigoSubproducto: '0048'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '810000394800'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2110'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '220007156570'
+                oficinaCcc: '0891'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '97'
+                codigoSubproducto: '0061'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '810100028235'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '01'
+                codigoSubproducto: '1100'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '810000396989'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2110'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-08-18-10.02.11.983593
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '880100028237'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '01'
+                codigoSubproducto: '1007'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '880000398851'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2007'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2023-02-01-11.05.11.820630
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '440000359268'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '44'
+                codigoSubproducto: '4000'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-11-11-12.17.14.561630
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '870000045010'
+                oficinaCcc: '0448'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2008'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: USD
+              - numeroCliente: '02501014'
+                numeroContrato: '640100009036'
+                oficinaCcc: '0287'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '01'
+                codigoSubproducto: '1240'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '830104488980'
+                oficinaCcc: '0448'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '01'
+                codigoSubproducto: '1100'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-10-20-11.28.22.719893
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '800000397276'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2007'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-09-28-12.15.03.680255
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '670100065077'
+                oficinaCcc: '0497'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '01'
+                codigoSubproducto: '1100'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '800000393843'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 3
+                codigoProducto: '02'
+                codigoSubproducto: '2110'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-10-26-09.54.14.330799
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '640100065185'
+                oficinaCcc: '0497'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 2
+                codigoProducto: '01'
+                codigoSubproducto: '1100'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '850000399038'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2110'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2023-02-09-15.14.52.964257
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '840000393474'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2019'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: EUR
+              - numeroCliente: '02501014'
+                numeroContrato: '860000398107'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2110'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-10-25-15.50.23.379883
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '860000398026'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2007'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-10-20-11.58.07.432374
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '880000395870'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2007'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '390100329566'
+                oficinaCcc: '0221'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '01'
+                codigoSubproducto: '1100'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-11-14-09.38.30.535395
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '540000189790'
+                oficinaCcc: '9011'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '54'
+                codigoSubproducto: '0048'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '340000858126'
+                oficinaCcc: '0221'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2020'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2023-02-17-16.22.30.673516
+                codigoMoneda: EUR
+              - numeroCliente: '02501014'
+                numeroContrato: '190000441546'
+                oficinaCcc: '0228'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 2
+                codigoProducto: '02'
+                codigoSubproducto: '2110'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-10-25-16.55.10.866980
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '810100028252'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '01'
+                codigoSubproducto: '1007'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-12-20-10.18.09.308531
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '410002058331'
+                oficinaCcc: '9503'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '41'
+                codigoSubproducto: '1003'
+                fechaBaja: '0001-01-01'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '160100014813'
+                oficinaCcc: '0228'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '01'
+                codigoSubproducto: '1100'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '450300145690'
+                oficinaCcc: '9198'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '03'
+                codigoSubproducto: '0000'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '830000395427'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2110'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2023-02-16-11.57.45.801781
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '250100012113'
+                oficinaCcc: '0275'
+                entidadCcc: '0102'
+                calidadParticipe: AU
+                orderParticipe: 1
+                codigoProducto: '01'
+                codigoSubproducto: '1100'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '820000398482'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2007'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-12-20-11.07.52.992800
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '420008565614'
+                oficinaCcc: '9503'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '42'
+                codigoSubproducto: '1001'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-07-22-14.59.32.688028
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '830000398411'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2007'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-12-07-15.32.51.725012
+                codigoMoneda: VES
+              - numeroCliente: '02501014'
+                numeroContrato: '830000398327'
+                oficinaCcc: '0353'
+                entidadCcc: '0102'
+                calidadParticipe: TI
+                orderParticipe: 1
+                codigoProducto: '02'
+                codigoSubproducto: '2007'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                porcentajeResponsabilidad: 0
+                marcaRetener: N
+                motivoLaBaja: "  "
+                timestamp: 2022-11-29-12.49.12.489573
+                codigoMoneda: VES
+            status: 200
   deprecated: false
 components:
   schemas:

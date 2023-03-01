@@ -87,9 +87,34 @@ post:
           timeStamp: ""
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "BGE0026 CAMPO CTA/NRO IDEN/NRO PER INCORRECTO."
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PEM2247:
+              - user:
+                terminal:
+                numeroDePersona: '27417690'
+                tipoDeIngreso: '001'
+                fechaDelIngreso: '2022-10-22'
+                codigoMoneda: VES
+                importeIngreso: 10000
+                importeHasta: 0
+                timeStamp: 2022-10-22-12.10.06.555749
+            status: 200
   deprecated: false
 components:
   schemas:

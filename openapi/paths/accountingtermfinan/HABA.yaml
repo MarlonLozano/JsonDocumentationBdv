@@ -44,8 +44,52 @@ post:
     required: true
   responses:
     "200":
-      description: ""
-      headers: {}
+      description: Success
+      content:
+        application/json:
+          schema:
+            hola:
+              title: hola
+          example:
+            code: 1000
+            message: success
+            data:
+              HAMBB4:
+                monto: 0000000000010,00
+                nroDocumento:              
+                nroReferencia: 236899825
+                ofiOrigen: 0353
+                ofiDestino: 0353
+                descripcion: PAPEL DE OFICINA
+              NOTICES:
+                aviso: 03  INGRESO EFECTUADOÓ
+              JOURNAL:
+                centro: 0353
+                netname: TD39    
+                aplicac: HA
+                secuenc: 002
+                divisa: VES
+                importe: 00000000000001000
+                indDebHab: D
+                indCajComp: B
+                indTota: S
+                producto: PAGO DE SERVICIO    
+                referenc: PAGO DE SERVICIO    
+                masInform:                     
+                fechaOper: 2023-02-22
+                fechaCont: 2023-02-22
+                codtran: HABA
+                numtask: 0047993
+    "400":
+      descripcion: Bad Request
+      content:
+        application/json:
+          example:
+            timestamp: 2023-02-22T19:08:16.303+00:00
+            path: /consultingAccountingServicesHABA
+            status: 400
+            error: Bad Request
+            requestId: b36a2934-2
   deprecated: false
 components:
   schemas:

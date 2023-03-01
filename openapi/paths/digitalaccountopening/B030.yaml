@@ -45,9 +45,43 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "BGE0038 EL REGISTRO NO EXISTE EN TABLA DE PRODUCTO.Ó\x9F"
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              BGM0301:
+              - numeroSolicitud: 15250401
+                desAmplProducto: 'J '
+                desRedSubprod: '00040756317'
+                numeroCliente: '22464034'
+                producto: '02'
+                subProducto: '2110'
+                indPertenecerPqt: N
+                pqtProductoSoli: "  "
+                spqtProductoSoli: "    "
+                estadoSolicitud: S
+                fechaAlta: '2023-02-27'
+                entidad: "    "
+                centroAlta: "    "
+                numContrato: "            "
+                oficinaSolicitud: '0353'
+                divisa1: "   "
+              NOTICE:
+              - aviso: '09 OK. ALTA EFECTUADAÓ'
+            status: 200
   deprecated: false
 components:
   schemas:

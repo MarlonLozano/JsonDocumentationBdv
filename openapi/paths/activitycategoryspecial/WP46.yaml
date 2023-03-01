@@ -35,9 +35,26 @@ post:
           user: OPCE204
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "PEE1332 CLIENTE YA POSEE ACTIVIDAD/CATEGORIAÓ\x9F"
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              NOTICES:
+              - aviso: "07 INCORPORACION EFECTUADAÓ\x9F"
+            status: 200
   deprecated: false
 components:
   schemas:

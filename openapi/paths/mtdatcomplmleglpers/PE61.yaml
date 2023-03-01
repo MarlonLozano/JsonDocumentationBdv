@@ -27,9 +27,40 @@ post:
           Terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "PEE0001 PERSONA INEXISTENTE"
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PEM2340C:
+              - codigoEntidad: '0102'
+                numeroCliente: '21420527'
+                tipoDocumento: J
+                numeroDocumento: '00050500147'
+                secuenciaDocumento: '02'
+                expedidoPor: ''
+                fechaVencimiento: '9999-12-31'
+                marcaPadron: ''
+                condicionDocumento: P
+                codigoPaisProvinc: '432'
+                fechaExpedicion: '0001-01-01'
+                lugarExpedicion: ''
+                timestamp: 2022-10-24-12.14.32.190595
+              NOTICES:
+              - aviso: 00 PROCESO EFECTUADOÓ
+            status: 200
   deprecated: false
 components:
   schemas:

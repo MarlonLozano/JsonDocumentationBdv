@@ -29,9 +29,51 @@ post:
           libre: VES
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "QGE0024 LA CLAVE QG850 NO EXISTE EN LA TABLA DE REFERENCIA DE TOTALESÓ\x9F"
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              QGRMVAL:
+              - user:
+                terminal:
+                numDeValidadora: QG001
+                importeAlDebe: "               "
+                importeAlHaber: "               "
+                observaciones: "               0,00H"
+                destino: 1020353
+                terminalContable: CGH1
+                libre: 'VES         '
+              JOURNAL:
+                centro: '0353'
+                netname: 'CGH1    '
+                aplicac: QG
+                secuenc: '001'
+                divisa: VES
+                importe: '00000000000000000'
+                indDebHab: H
+                indCajComp: A
+                indTota: S
+                producto: '001020353           '
+                referenc: 'BC2K                '
+                masInform: "                    "
+                fechaOper: '2023-02-28'
+                fechaCont: '2023-02-28'
+                codtran: QG01
+                numtask: '0047332'
+            status: 200
   deprecated: false
 components:
   schemas:

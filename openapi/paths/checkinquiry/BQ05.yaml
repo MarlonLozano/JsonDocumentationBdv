@@ -21,9 +21,66 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "BGE0002 CHEQUE DE GERENCIA NO EXISTE.Ó\x9F"
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              BGMQ050:
+              - entidad: '0102'
+                centro: '0353'
+                cuenta: '850000000001'
+                divisa: VES
+                numeroCheque: 2353000020983
+                centroEmisor: '0353'
+                tipoDocumentoOrdenante: 'J '
+                numeroDocumentoOrdenante: '00040485898'
+                nombreOrdenante: AVITURS C.A**********************************
+                entidadDebito: '0102'
+                centroDebito: '0441'
+                cuentaDebito: '180000249683'
+                divisaDebito: VES
+                tipoDocumentoBenefic: 'V '
+                numeroDocumentoBenefic: '00018124126'
+                nombreBenefic: ARIANNA GUERRERO*****************************
+                claseTalon: '98050'
+                indicComision: N
+                importe: 66.36
+                fechaContable: '2022-10-24'
+                fechaEmision: '2022-05-17'
+                centroCobro: '0353'
+                fechaActivacion: '2022-05-17'
+                fechaVencimiento: '2022-11-13'
+                formaPago: '2'
+                estadoCheque: P
+                numeroMovPagado: 41529
+                numeroMovEmitido: 41484
+                fechaOnp: '0001-01-01'
+                codMotivoOnp: "   "
+                observaciones: 'COMPRA BIENES            '
+                codigoAplicacion: BG
+                terminalNio: BEQY
+                fechaNio: '2022-10-24'
+                horaNio: '10261514'
+                entidadUltMod: '0102'
+                centroUltMod: '9199'
+                usuarioUltMod: 'BDVN004 '
+                terminal: 'BEQY    '
+                timestampUltMod: 2022-10-24-10.26.15.154148
+                descripcionChequera: CHEQUE GERENCIA(OFICINAS)
+            status: 200
   deprecated: false
 components:
   schemas:

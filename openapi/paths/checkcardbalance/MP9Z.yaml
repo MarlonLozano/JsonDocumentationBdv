@@ -1,8 +1,8 @@
 post:
   tags:
-    - settlementsmaintenance
-  summary: PE88
-  operationId: PE88
+    - checkcardbalance
+  summary: MP9Z
+  operationId: MP9Z
   parameters: []
   requestBody:
     description: ""
@@ -10,27 +10,19 @@ post:
       application/json:
         schema:
           allOf:
-            - $ref: "#/components/schemas/PE88REQUEST"
+            - $ref: "#/components/schemas/MP9ZREQUEST"
             - example:
-                opcion: A
-                numeroPersona: "27417690"
-                secuenciaPerscargo: 0
-                tipoParentesco: "005"
-                fechaNacimiento: 1975-06-25T00:00:00.000Z
-                sexoDelPariente: H
-                timestamp: ""
-                user: OPCE204
-                terminal: "0353"
+                panDeLaTarjeta: 5899415611546865
+                motivoDeBaja: 10
+                indRecogPlastico: N 
+                user: OPCE812
+                terminal: "0190"
         example:
-          opcion: A
-          numeroPersona: "27417690"
-          secuenciaPerscargo: 0
-          tipoParentesco: "005"
-          fechaNacimiento: 1975-06-25T00:00:00.000Z
-          sexoDelPariente: H
-          timestamp: ""
-          user: OPCE204
-          terminal: "0353"
+          panDeLaTarjeta: 5899415611546865
+          motivoDeBaja: 10
+          indRecogPlastico: N 
+          user: OPCE812
+          terminal: "0190"
     required: true
   responses:
     "201":
@@ -39,8 +31,10 @@ post:
         application/json:
           example:
             code: 1001
-            message: "PEE0448 NO EXISTE EL TIPO DE PARENTESCO ESPECIFICADO."
-            data: {}
+            message: MPE9999 EXISTEN ERRORES DE VALIDACION.
+            data:
+              NOTICES:
+              - aviso: "73 TARJETA INEXISTENTEÓ\x9F"
             status: 200
     "200":
       description: succes
@@ -51,7 +45,8 @@ post:
             message: success
             data:
               NOTICES:
-              - aviso: "07 INCORPORACION EFECTUADAÓ\x9F"
+              - aviso: 93 NO HA PODIDO SER COMUNICADOÓ
+              - aviso: 66 OK. OPERACION EFECTUADAÓ
             status: 200
   deprecated: false
 components:
@@ -10139,76 +10134,24 @@ components:
         fechaDeAlta: " "
         fechaDeBaja: " "
         controlDeConcurren: 2022-10-25-18.22.25.555253
-    MP5DREQUEST:
-      title: MP5DREQUEST
+    MP9ZREQUEST:
+      title: MP9ZREQUEST
       required:
-        - codigoDeEntidad
-        - centroDeAltaCuent
-        - cuentaDeLaTarjeta
-        - codmarcaTarjeta
-        - descrdeLaMarca
-        - indTipoTarjeta
-        - descrtipoTjtReduc
-        - numeroDeTarjeta
-        - fechaDeAlta
-        - indsituacionTjt
-        - dessituacionTjt
-        - nombreEstampacion
-        - codigoDeBloqueo
-        - fechaDeBaja
-        - descripcionBloqueo
-        - indUltimaTarjeta
+        - panDeLaTarjeta
+        - motivoDeBaja
+        - indRecogPlastico
         - user
         - terminal
       type: object
       properties:
-        codigoDeEntidad:
-          description: Entidad 0102 Valor por defecto
+        panDeLaTarjeta:
+          description: Numero de la Tarjeta
           type: string
-        centroDeAltaCuent:
-          description: Oficina que da el alta a la tarjeta
+        motivoDeBaja:
+          description: List Box
           type: string
-        cuentaDeLaTarjeta:
-          description: Cuenta contrato de la tarjeta
-          type: string
-        codmarcaTarjeta:
-          description: Campo de salida
-          type: string
-        descrdeLaMarca:
-          description: Campo de salida
-          type: string
-        indTipoTarjeta:
-          description: Campo de salida
-          type: string
-        descrtipoTjtReduc:
-          description: Campo de salida
-          type: string
-        numeroDeTarjeta:
-          description: Campo de salida
-          type: string
-        fechaDeAlta:
-          description: Campo de salida
-          type: string
-        indsituacionTjt:
-          description: Campo de salida
-          type: string
-        dessituacionTjt:
-          description: Campo de salida
-          type: string
-        nombreEstampacion:
-          description: Campo de salida
-          type: string
-        codigoDeBloqueo:
-          description: Campo de salida
-          type: string
-        fechaDeBaja:
-          description: Campo de salida
-          type: string
-        descripcionBloqueo:
-          description: Campo de salida
-          type: string
-        indUltimaTarjeta:
-          description: Campo de salida
+        indRecogPlastico:
+          description: Valor Por Defecto
           type: string
         user:
           description: ""
@@ -10217,22 +10160,9 @@ components:
           description: ""
           type: string
       example:
-        codigoDeEntidad: "0102"
-        centroDeAltaCuent: "0121"
-        cuentaDeLaTarjeta: "440000183233"
-        codmarcaTarjeta: ""
-        descrdeLaMarca: ""
-        indTipoTarjeta: ""
-        descrtipoTjtReduc: ""
-        numeroDeTarjeta: ""
-        fechaDeAlta: ""
-        indsituacionTjt: ""
-        dessituacionTjt: ""
-        nombreEstampacion: ""
-        codigoDeBloqueo: ""
-        fechaDeBaja: ""
-        descripcionBloqueo: ""
-        indUltimaTarjeta: ""
+        panDeLaTarjeta: 5899415611546865
+        motivoDeBaja: 10
+        indRecogPlastico: N 
         user: OPCE812
         terminal: "0190"
     MPL1REQUEST:

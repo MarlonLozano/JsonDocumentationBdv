@@ -153,9 +153,172 @@ post:
           codOfcNacTesorEp: ""
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: PEE0013 NO EXISTEN DATOS COMPLEMENTARIOS PARA LA PERSONA
+            data:
+              PEM287:
+              - user:
+                terminal:
+                numeroCliente: '21420523'
+                tipoDocumento: 'J '
+                numeroDocumento: '00000049318'
+                secuenIdentifdoc: '01'
+                nombreFantasia: "                              "
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombreRazonSocial: 'FUENTE DE SODA RESTAURANT COLO          '
+                fechaNacimiConstit: '0001-01-01'
+                tipoEmpresa: J
+                estadoPersona: '010'
+                condicion: PRO
+                nivelAcceso: '1'
+                indRelacEntrePers: N
+                indTenerContrat: N
+                indPerteneGrupo: N
+                indicadorDeAviso: N
+                indUso1: N
+                indUso2: N
+                indUso3: N
+                indUso4: N
+                indUso5: N
+                tipoVia: "  "
+                calle: "                                                  "
+                obserDomicilio1: "                                                                                                    "
+                obserDomicilio2: "                                                                                                    "
+                bloqNumCasillaApt: "          "
+                localidad: "       "
+                comuna: "     "
+                codigoPostal: "        "
+                rutaCartero: 0
+                codigoProvincia: "  "
+                codigoPais: "   "
+                marcaNormalizacion: " "
+                cotizaEnBolsa: " "
+                tipEntidComerNoC: " "
+                cantidadPersonas: 0
+                tipRelacClienBanc: " "
+                fechaDisolucion: "          "
+                fechaInicioSocieda: "          "
+                artCorresponEmpre: 0
+                plazoDuracuinSocie: 0
+                firmaSolicitud: " "
+                fechaCambioDirecci: "          "
+                fechaVencimDirecto: "          "
+                fechaInscripcion: "          "
+                nombreNotario:
+                numeroRegistroInsc: "                                "
+                tomoInscripRegistr: "          "
+                folioInscripRegist: "          "
+                jurisdicInscrRegis: 0
+                propiedadNacioMult: " "
+                ramoEmpresa: "    "
+                ultModifRegCamCo: "          "
+                facturacionAnual: "                  "
+                patrimonioNeto: "                  "
+                codigoMoneda: "   "
+                objetoSocial1: "                                                                                                                        "
+                objetoSocial2: "                                                                                                                        "
+                nombreRegistro: "                                "
+                numeroRegistro: "                              "
+                numeroTomo: "          "
+                numeroFolio: "          "
+                fechaRegistro: "          "
+                capitalActual: "                  "
+                nroGacOficEp: "        "
+                fechaGacOficEp: "          "
+                nombreEnteAutorEp: "                                        "
+                codOfcNacTesorEp: "                              "
+              NOTICES:
+              - aviso: 94 NO EXISTE DOMICILIO PPAL. ASOCIADOÓ
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PEM287:
+              - user:
+                terminal:
+                numeroCliente: '21420527'
+                tipoDocumento: 'J '
+                numeroDocumento: '00050500147'
+                secuenIdentifdoc: '02'
+                nombreFantasia: "                              "
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombreRazonSocial: 'PANDOK CARUPANO  C A                    '
+                fechaNacimiConstit: '0001-01-01'
+                tipoEmpresa: J
+                estadoPersona: '010'
+                condicion: PRO
+                nivelAcceso: '1'
+                indRelacEntrePers: S
+                indTenerContrat: N
+                indPerteneGrupo: N
+                indicadorDeAviso: N
+                indUso1: N
+                indUso2: N
+                indUso3: N
+                indUso4: N
+                indUso5: N
+                tipoVia: "  "
+                calle: "                                                  "
+                obserDomicilio1: "                                                                                                    "
+                obserDomicilio2: "                                                                                                    "
+                bloqNumCasillaApt: "          "
+                localidad: "       "
+                comuna: "     "
+                codigoPostal: "        "
+                rutaCartero: 0
+                codigoProvincia: "  "
+                codigoPais: "   "
+                marcaNormalizacion: " "
+                cotizaEnBolsa: " "
+                tipEntidComerNoC: V
+                cantidadPersonas: 0
+                tipRelacClienBanc: " "
+                fechaDisolucion: '9999-12-31'
+                fechaInicioSocieda: '0001-01-01'
+                artCorresponEmpre: 101
+                plazoDuracuinSocie: 0
+                firmaSolicitud: " "
+                fechaCambioDirecci: '0001-01-01'
+                fechaVencimDirecto: '9999-12-31'
+                fechaInscripcion: '1978-06-25'
+                nombreNotario:
+                numeroRegistroInsc: '9898                            '
+                tomoInscripRegistr: '7532      '
+                folioInscripRegist: '2121      '
+                jurisdicInscrRegis: 0
+                propiedadNacioMult: " "
+                ramoEmpresa: "    "
+                ultModifRegCamCo: '0001-01-01'
+                facturacionAnual: "                  "
+                patrimonioNeto: 2500000000
+                codigoMoneda: "   "
+                objetoSocial1: "                                                                                                                        "
+                objetoSocial2: "    2022-10-24-11.55.25.867320                                                                                          "
+                nombreRegistro: "                                "
+                numeroRegistro: "                              "
+                numeroTomo: "          "
+                numeroFolio: "          "
+                fechaRegistro: "          "
+                capitalActual: "                  "
+                nroGacOficEp: "        "
+                fechaGacOficEp: "          "
+                nombreEnteAutorEp: "                                        "
+                codOfcNacTesorEp: "                              "
+              NOTICES:
+              - aviso: 94 NO EXISTE DOMICILIO PPAL. ASOCIADOÓ
+            status: 200
   deprecated: false
 components:
   schemas:

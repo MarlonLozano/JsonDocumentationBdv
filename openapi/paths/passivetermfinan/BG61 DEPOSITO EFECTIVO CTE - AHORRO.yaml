@@ -157,9 +157,43 @@ post:
           terminal: "0353"
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "QCE0040 EL CAMPO CODIGO CTA-CLIENTE ES OBLIGATORIOÓ\x9F"
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              NOTICES:
+              - aviso: 00 NUM. MOV.      4333Ó
+              JOURNAL:
+                centro: '0353'
+                netname: 'CGH1    '
+                aplicac: BG
+                secuenc: '002'
+                divisa: VES
+                importe: '00000000000001000'
+                indDebHab: H
+                indCajComp: A
+                indTota: S
+                producto: '01020359710000021089'
+                referenc: 1301 240223     4333
+                masInform: "                    "
+                fechaOper: '2023-02-24'
+                fechaCont: '2023-02-24'
+                codtran: BG61
+                numtask: '0018152'
+            status: 200
   deprecated: false
 components:
   schemas:

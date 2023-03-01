@@ -89,9 +89,508 @@ post:
           timestamp: ""
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "BGE0026 CAMPO CTA/NRO IDEN/NRO PER INCORRECTO."
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              WPM71B:
+              - user:
+                terminal:
+                numeroPersona: '10138199'
+                tipoDocumento: 'J '
+                numeroDocumento: '00000000350'
+                secuenciaDocumento: '01'
+                secuenciaContacto: 0
+                dptoContacto: "   "
+                nombreFantasia: 'ACUMULADORES DUNCAN CA        '
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombre: 'ACUMULADORES DUNCAN CA                  '
+                fechaConstitucion: '1976-06-25'
+                tipoPersona: J
+                estadoPersona: '703'
+                condicion: CLI
+                nivelAcceso: '0'
+                indicadorRelaciones: S
+                tenerContratos: S
+                pertenenciaGrupos: S
+                indicadorAvisos: S
+                indUso1: N
+                indUso2: N
+                indUso3: N
+                indUso4: N
+                idnUso5: N
+                tipoVia: AV
+                calle: 'MI AVENIDA                                        '
+                observaciones1: 'NAGEBEN CA                         22                       LOS
+                  RUICES                              '
+                observaciones2: "        DUNCA@GMAIL.COM                                                                             "
+                bloqueApdoCorreos: "          "
+                localidad: '1400916'
+                comuna: "     "
+                codigoPostal: '00001209'
+                rutaCartero: 0
+                codigoProvincia1: '14'
+                codigoProvincia2: '432'
+                marcaNormalizacion: N
+                timestamp: 2023-01-31-10.38.04.376461
+                ultimoPenumper: "        "
+                ultimoSecContacto: "   "
+                ultimoDepContacto: "   "
+                segundaRellamada: " "
+                codigoRellamada: "  "
+              WPM28C:
+              - numeroPersona: '10138199'
+                secuenciaContacto: 6
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'PRUEBAS             '
+                segundoApellido: "                    "
+                nombre: 'PRUEBAS                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00013067057'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: "  "
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '0005416674'
+                numeroInternoExterno: "                    "
+                emailContacto: "                                                  "
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-06-21-12.06.33.574894
+              - numeroPersona: '10138199'
+                secuenciaContacto: 7
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-06-21-15.34.23.508089
+              - numeroPersona: '10138199'
+                secuenciaContacto: 8
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-07-06-10.46.36.395877
+              - numeroPersona: '10138199'
+                secuenciaContacto: 9
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-08-19-09.27.00.779932
+              - numeroPersona: '10138199'
+                secuenciaContacto: 10
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-08-19-09.30.52.446506
+              - numeroPersona: '10138199'
+                secuenciaContacto: 11
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-10-05-16.31.13.386627
+              - numeroPersona: '10138199'
+                secuenciaContacto: 12
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-10-06-11.13.26.097702
+              - numeroPersona: '10138199'
+                secuenciaContacto: 13
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-10-06-11.13.28.689121
+              - numeroPersona: '10138199'
+                secuenciaContacto: 14
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-10-10-16.07.09.008988
+              - numeroPersona: '10138199'
+                secuenciaContacto: 15
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-10-13-16.03.11.494761
+              - numeroPersona: '10138199'
+                secuenciaContacto: 16
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-10-13-16.05.21.049504
+              - numeroPersona: '10138199'
+                secuenciaContacto: 17
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-10-24-14.35.16.318509
+              - numeroPersona: '10138199'
+                secuenciaContacto: 18
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-11-15-15.01.30.976317
+              - numeroPersona: '10138199'
+                secuenciaContacto: 19
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-11-15-15.31.57.606698
+              - numeroPersona: '10138199'
+                secuenciaContacto: 20
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-11-18-09.44.32.877588
+              - numeroPersona: '10138199'
+                secuenciaContacto: 21
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-12-01-09.29.44.278112
+              - numeroPersona: '10138199'
+                secuenciaContacto: 22
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-12-01-11.40.19.708663
+              - numeroPersona: '10138199'
+                secuenciaContacto: 23
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-12-05-11.32.55.870364
+              - numeroPersona: '10138199'
+                secuenciaContacto: 24
+                tipoContacto: '02'
+                accesibContacto: "  "
+                primerApellido: 'ROMEROS             '
+                segundoApellido: 'PEREZA              '
+                nombre: 'ANTHONY                                 '
+                tipoDocumento: 'V '
+                numeroDocumento: '00019065558'
+                marcaPpalContacto: N
+                nombreSecretaria: "                              "
+                cargoContacto: '38'
+                departamContacto: "   "
+                referenciaDomicilio: 0
+                codigoArea: "       "
+                numeroTelefono: '4127201785'
+                numeroInternoExterno: '1207                '
+                emailContacto: 'AROMERO@DUNCAN.COM.VE                             '
+                marcaCliente: N
+                observacion1: "                                                                                                    "
+                observacion2: "                                                                                                    "
+                observacion3: "                                                  "
+                timestamp: 2022-12-05-11.49.44.414293
+            status: 200
   deprecated: false
 components:
   schemas:

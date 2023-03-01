@@ -33,9 +33,160 @@ post:
           segLlamada: ""
     required: true
   responses:
+    "201":
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1001
+            message: "PEE0226 FALTAN DATOS DE ENTRADAÓ\x9F"
+            data: {}
+            status: 200
     "200":
-      description: ""
-      headers: {}
+      description: succes
+      content:
+        application/json:
+          example:
+            code: 1000
+            message: success
+            data:
+              PEM8010:
+              - numeroPersona: '10138199'
+                calPar: TI
+                ordPart: 1
+                codigoProducto: '02'
+                codigoSubproduct: '2300'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                responsaEnInterv: '00000'
+                marcaPaquete: N
+                motivoBaja: "  "
+                tipoDocumento: 'J '
+                numeroDocumento: '00000000350'
+                secuenciaDocumen: '01'
+                nombreFantasia: 'ACUMULADORES DUNCAN CA        '
+                primerApellido: "                    "
+                segundoApellido: "                    "
+                nombrePersona: 'ACUMULADORES DUNCAN CA                  '
+                fechaNacimiento: '1976-06-25'
+                tipoPersona: J
+                estadoPersona: '703'
+                condicPersona: CLI
+                nivel: '0'
+                indRelacPers: S
+                indContratos: S
+                indPerteAGrupo: S
+                indAvisos: S
+                indUso1: N
+                indUso2: N
+                indUso3: N
+                indUso4: N
+                indUso5: N
+                tipoVia: AV
+                nombreCalle: 'MI AVENIDA                                        '
+                complementoVar1: 'NAGEBEN CA                         22                       LOS
+                  RUICES                              '
+                complementoVar2: "        DUNCA@GMAIL.COM                                                                             "
+                numeroBloque: "          "
+                nombreLocalidad: '1400916'
+                nombreComunidad: "     "
+                codigoPostal: '00001209'
+                rutaCartero: 0
+                codigoProvincia: '14'
+                codigoPais: '432'
+                marcaNormalizado: N
+                timestamp: 2022-09-16-16.15.21.204057
+              - numeroPersona: '21573139'
+                calPar: AU
+                ordPart: 2
+                codigoProducto: '02'
+                codigoSubproduct: '2300'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                responsaEnInterv: '00000'
+                marcaPaquete: N
+                motivoBaja: "  "
+                tipoDocumento: 'V '
+                numeroDocumento: '00018124126'
+                secuenciaDocumen: '01'
+                nombreFantasia: "                              "
+                primerApellido: 'GUERRERO            '
+                segundoApellido: 'ARAQUE              '
+                nombrePersona: 'ARIANNA                                 '
+                fechaNacimiento: '1958-08-30'
+                tipoPersona: F
+                estadoPersona: '010'
+                condicPersona: CLI
+                nivel: '0'
+                indRelacPers: S
+                indContratos: S
+                indPerteAGrupo: N
+                indAvisos: N
+                indUso1: N
+                indUso2: N
+                indUso3: N
+                indUso4: N
+                indUso5: N
+                tipoVia: AV
+                nombreCalle: 'NOMBRE VIA                                        '
+                complementoVar1: 'DESCRIPCION CONSTRUCCION           COMPLEMENTO              DESCRIPCION
+                  NUCLEO                      '
+                complementoVar2: "        PRUEBAS@YAHOO.COM                                                                           "
+                numeroBloque: "          "
+                nombreLocalidad: '0100810'
+                nombreComunidad: "     "
+                codigoPostal: '00001030'
+                rutaCartero: 0
+                codigoProvincia: '01'
+                codigoPais: '432'
+                marcaNormalizado: N
+                timestamp: 2023-01-12-11.24.04.285578
+              - numeroPersona: '22153314'
+                calPar: AU
+                ordPart: 1
+                codigoProducto: '02'
+                codigoSubproduct: '2300'
+                fechaBaja: '9999-12-31'
+                estadoRelacion: A
+                responsaEnInterv: '00000'
+                marcaPaquete: N
+                motivoBaja: "  "
+                tipoDocumento: 'V '
+                numeroDocumento: '00024057906'
+                secuenciaDocumen: '01'
+                nombreFantasia: "                              "
+                primerApellido: 'VILLALBA            '
+                segundoApellido: 'PANTALEAON          '
+                nombrePersona: 'ADONIS              JOSE                '
+                fechaNacimiento: '1945-12-05'
+                tipoPersona: F
+                estadoPersona: '010'
+                condicPersona: CLI
+                nivel: '0'
+                indRelacPers: N
+                indContratos: S
+                indPerteAGrupo: N
+                indAvisos: N
+                indUso1: N
+                indUso2: N
+                indUso3: N
+                indUso4: N
+                indUso5: N
+                tipoVia: CJ
+                nombreCalle: 'EL MOLINO                                         '
+                complementoVar1: 'NRO 56-6                                                    LAS
+                  FLORES DE CATIA                     '
+                complementoVar2: "        VILLA@GMAIL.COM                                                                             "
+                numeroBloque: "          "
+                nombreLocalidad: '1300523'
+                nombreComunidad: "     "
+                codigoPostal: '00001030'
+                rutaCartero: 0
+                codigoProvincia: '13'
+                codigoPais: '432'
+                marcaNormalizado: N
+                timestamp: 2022-09-16-16.15.21.183050
+            status: 200
   deprecated: false
 components:
   schemas:
